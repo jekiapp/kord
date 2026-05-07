@@ -27,6 +27,7 @@ final class ChordEngine {
     private var dictionary: ChordDictionary
     private var windowTimer: DispatchWorkItem?
     private var chordableChars: Set<Character> = []
+    private var isAtWordBoundary = true
 
     init(dictionary: ChordDictionary) {
         self.dictionary = dictionary
@@ -75,10 +76,12 @@ final class ChordEngine {
 
         switch state {
         case .idle:
-            guard let c = char, chordableChars.contains(c) else {
+            guard isAtWordBoundary, let c = char, chordableChars.contains(c) else {
+                updateWordBoundary(with: char)
                 return false
             }
             state = .collecting
+            isAtWordBoundary = false
             addKey(event)
             startWindow()
             return true
@@ -123,11 +126,16 @@ final class ChordEngine {
         let keys = heldKeys
         heldKeys.removeAll()
         bufferedKeys.removeAll()
+        // Expansions are injected with trailing space by the coordinator.
+        isAtWordBoundary = true
         delegate?.chordEngine(self, didRecognizeChord: expansion)
     }
 
     private func cancelGesture() {
         let keys = bufferedKeys
+        if let lastChar = keys.last?.character?.lowercased().first {
+            updateWordBoundary(with: lastChar)
+        }
         reset()
         if !keys.isEmpty {
             delegate?.chordEngine(self, didFailWithKeys: keys)
@@ -136,5 +144,12 @@ final class ChordEngine {
 
     private func rebuildChordableChars() {
         chordableChars = dictionary.allChordCharacters()
+    }
+
+    private func updateWordBoundary(with char: Character?) {
+        guard let char else { return }
+        isAtWordBoundary = char.unicodeScalars.allSatisfy { scalar in
+            CharacterSet.whitespacesAndNewlines.contains(scalar)
+        }
     }
 }

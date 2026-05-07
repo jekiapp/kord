@@ -118,4 +118,21 @@ final class ChordDictionaryTests: XCTestCase {
         XCTAssertEqual(dictionary.lookup(Set(["a", "b", "c"])), "alphabet")
         XCTAssertEqual(dictionary.lookup(Set(["b", "a", "c"])), "alphabet")
     }
+
+    func testLoadFromListFormatSkipsDashShortcut() throws {
+        let yaml = """
+        words:
+          - shortcut: "prb"
+            word: "problem"
+          - shortcut: "-"
+            word: "with"
+          - shortcut: "txn"
+            word: "transaction"
+        """
+        try dictionary.loadFromString(yaml)
+
+        XCTAssertEqual(dictionary.lookup(Set(["p", "r", "b"])), "problem")
+        XCTAssertEqual(dictionary.lookup(Set(["t", "x", "n"])), "transaction")
+        XCTAssertNil(dictionary.lookup(Set(["w", "h"])))
+    }
 }

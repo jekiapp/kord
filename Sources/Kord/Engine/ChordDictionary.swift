@@ -41,14 +41,31 @@ final class ChordDictionary {
             timingWindowMs = max(30, min(150, timing))
         }
 
-        guard let words = yaml["words"] as? [String: String] else {
+        guard let words = yaml["words"] else {
             throw DictionaryError.missingWords
         }
 
         var newEntries: [String: String] = [:]
-        for (key, value) in words {
-            let normalized = String(key.sorted())
-            newEntries[normalized] = value
+        if let mappedWords = words as? [String: String] {
+            for (key, value) in mappedWords where key != "-" {
+                let normalized = String(key.sorted())
+                newEntries[normalized] = value
+            }
+        } else if let listedWords = words as? [[String: Any]] {
+            for item in listedWords {
+                guard
+                    let rawShortcut = item["shortcut"] as? String,
+                    let word = item["word"] as? String
+                else {
+                    throw DictionaryError.invalidFormat
+                }
+                guard rawShortcut != "-" else { continue }
+                let shortcut = rawShortcut == "*" ? word : rawShortcut
+                let normalized = String(shortcut.sorted())
+                newEntries[normalized] = word
+            }
+        } else {
+            throw DictionaryError.invalidFormat
         }
         entries = newEntries
     }
