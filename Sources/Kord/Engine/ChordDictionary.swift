@@ -49,7 +49,10 @@ final class ChordDictionary {
         if let mappedWords = words as? [String: String] {
             for (key, value) in mappedWords where key != "-" {
                 let normalized = String(key.sorted())
-                newEntries[normalized] = value
+                // Keep the first entry when signatures conflict.
+                if newEntries[normalized] == nil {
+                    newEntries[normalized] = value
+                }
             }
         } else if let listedWords = words as? [[String: Any]] {
             for item in listedWords {
@@ -62,7 +65,10 @@ final class ChordDictionary {
                 guard rawShortcut != "-" else { continue }
                 let shortcut = rawShortcut == "*" ? word : rawShortcut
                 let normalized = String(shortcut.sorted())
-                newEntries[normalized] = word
+                // Preserve higher-order dictionary entries (earlier in file).
+                if newEntries[normalized] == nil {
+                    newEntries[normalized] = word
+                }
             }
         } else {
             throw DictionaryError.invalidFormat
