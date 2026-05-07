@@ -28,6 +28,9 @@ final class KordCoordinator: ChordEngineDelegate, EventTapDelegate {
 
     func setup() {
         engine.delegate = self
+        engine.isCaretAtTextBoundary = {
+            CaretContextReader.isAtTextBoundary()
+        }
         eventTapManager.delegate = self
 
         _ = configManager.loadDictionary(from: settings.dictionaryPath)

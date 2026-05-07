@@ -19,6 +19,7 @@ final class ChordEngine {
     }
 
     weak var delegate: ChordEngineDelegate?
+    var isCaretAtTextBoundary: (() -> Bool?)?
 
     private(set) var state: State = .idle
     private var timingWindowMs: Int = 70
@@ -72,11 +73,11 @@ final class ChordEngine {
     // MARK: - Private
 
     private func handleKeyDown(_ event: KeyEvent) -> Bool {
-        let char = event.character?.lowercased().first
+        let char = normalizedCharacter(from: event)
 
         switch state {
         case .idle:
-            guard isAtWordBoundary, let c = char, chordableChars.contains(c) else {
+            guard canStartChord(), let c = char, chordableChars.contains(c) else {
                 updateWordBoundary(with: char)
                 return false
             }
@@ -123,7 +124,6 @@ final class ChordEngine {
         }
 
         state = .idle
-        let keys = heldKeys
         heldKeys.removeAll()
         bufferedKeys.removeAll()
         // Expansions are injected with trailing space by the coordinator.
@@ -133,7 +133,7 @@ final class ChordEngine {
 
     private func cancelGesture() {
         let keys = bufferedKeys
-        if let lastChar = keys.last?.character?.lowercased().first {
+        if let lastChar = keys.last.flatMap(normalizedCharacter(from:)) {
             updateWordBoundary(with: lastChar)
         }
         reset()
@@ -146,10 +146,38 @@ final class ChordEngine {
         chordableChars = dictionary.allChordCharacters()
     }
 
+    private func canStartChord() -> Bool {
+        isCaretAtTextBoundary?() ?? isAtWordBoundary
+    }
+
     private func updateWordBoundary(with char: Character?) {
         guard let char else { return }
         isAtWordBoundary = char.unicodeScalars.allSatisfy { scalar in
             CharacterSet.whitespacesAndNewlines.contains(scalar)
         }
+    }
+
+    private func normalizedCharacter(from event: KeyEvent) -> Character? {
+        if let char = event.character?.lowercased().first {
+            return char
+        }
+        if boundaryKeyCodes.contains(event.keyCode) {
+            return " "
+        }
+        return nil
+    }
+
+    private func normalizedCharacter(from key: BufferedKey) -> Character? {
+        if let char = key.character?.lowercased().first {
+            return char
+        }
+        if boundaryKeyCodes.contains(key.keyCode) {
+            return " "
+        }
+        return nil
+    }
+
+    private var boundaryKeyCodes: Set<Int64> {
+        [36, 48, 49, 76] // Return, Tab, Space, Keypad Enter
     }
 }
