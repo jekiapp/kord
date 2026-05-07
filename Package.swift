@@ -14,10 +14,7 @@ let package = Package(
         .executableTarget(
             name: "Kord",
             dependencies: ["Yams"],
-            path: "Sources/Kord",
-            resources: [
-                .copy("Resources/default_dictionary.yaml")
-            ]
+            path: "Sources/Kord"
         ),
         .testTarget(
             name: "KordTests",

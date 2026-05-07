@@ -24,7 +24,7 @@ final class ConfigManager {
             try dictionary.load(from: url)
             return true
         } catch {
-            print("[Kord] Failed to load dictionary: \(error.localizedDescription)")
+            print("[Kord] Failed to load dictionary at '\(path)': \(error.localizedDescription)")
             return false
         }
     }
@@ -68,11 +68,19 @@ final class ConfigManager {
         let dir = (path as NSString).deletingLastPathComponent
         try? FileManager.default.createDirectory(atPath: dir, withIntermediateDirectories: true)
 
-        guard let bundledURL = Bundle.module.url(forResource: "default_dictionary", withExtension: "yaml") else {
+        let sourceFileURL = URL(fileURLWithPath: #filePath)
+        let projectRootURL = sourceFileURL
+            .deletingLastPathComponent()
+            .deletingLastPathComponent()
+            .deletingLastPathComponent()
+            .deletingLastPathComponent()
+        let defaultDictionaryURL = projectRootURL.appendingPathComponent("default_dictionary.yaml")
+
+        guard FileManager.default.fileExists(atPath: defaultDictionaryURL.path) else {
             return
         }
 
-        try? FileManager.default.copyItem(at: bundledURL, to: URL(fileURLWithPath: path))
+        try? FileManager.default.copyItem(at: defaultDictionaryURL, to: URL(fileURLWithPath: path))
     }
 
     deinit {

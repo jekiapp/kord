@@ -101,7 +101,7 @@ final class KordCoordinator: ChordEngineDelegate, EventTapDelegate {
     // MARK: - ChordEngineDelegate
 
     func chordEngine(_ engine: ChordEngine, didRecognizeChord expansion: String) {
-        textInjector.inject(expansion)
+        textInjector.inject(expansion + " ")
         DispatchQueue.main.async {
             self.appState.lastExpansion = expansion
         }
