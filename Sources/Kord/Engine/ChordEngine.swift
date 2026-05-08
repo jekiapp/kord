@@ -76,7 +76,7 @@ final class ChordEngine {
 
         switch state {
         case .idle:
-            guard let c = char, chordableChars.contains(c) else {
+            guard let c = char, chordableChars.contains(c) || c == " " else {
                 return false
             }
             state = .collecting
@@ -115,7 +115,8 @@ final class ChordEngine {
     private func commitGesture() {
         windowTimer = nil
 
-        guard heldKeys.count >= 3, let expansion = dictionary.lookup(heldKeys) else {
+        let lookupKeys = heldKeys.filter { !$0.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
+        guard heldKeys.count >= 3, lookupKeys.count >= 2, let expansion = dictionary.lookup(lookupKeys) else {
             cancelGesture()
             return
         }

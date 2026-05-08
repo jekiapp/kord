@@ -50,7 +50,7 @@ final class ChordDictionary {
             // JSON format maps expansion -> shortcut.
             for (word, rawShortcut) in mappedWords {
                 guard rawShortcut != "-" else { continue }
-                let normalized = String(rawShortcut.sorted())
+                let normalized = String(rawShortcut.lowercased().sorted())
                 // Keep the first entry when signatures conflict.
                 if newEntries[normalized] == nil {
                     newEntries[normalized] = word
@@ -65,7 +65,7 @@ final class ChordDictionary {
                     throw DictionaryError.invalidFormat
                 }
                 guard rawShortcut != "-" else { continue }
-                let normalized = String(rawShortcut.sorted())
+                let normalized = String(rawShortcut.lowercased().sorted())
                 // Preserve higher-order dictionary entries (earlier in file).
                 if newEntries[normalized] == nil {
                     newEntries[normalized] = word
