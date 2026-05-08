@@ -1,0 +1,2520 @@
+{
+  "source": "dict/ef/ef-dictionary.json",
+  "total_shortcuts": 1159,
+  "conflict_group_count": 139,
+  "conflicts": [
+    {
+      "signature": "abdl",
+      "unique_shortcuts": [
+        "badl",
+        "blad;"
+      ],
+      "entries": [
+        {
+          "word": "badly",
+          "shortcut": "badl"
+        },
+        {
+          "word": "blade",
+          "shortcut": "blad;"
+        }
+      ]
+    },
+    {
+      "signature": "abl",
+      "unique_shortcuts": [
+        "bal",
+        "lab;",
+        "labl'"
+      ],
+      "entries": [
+        {
+          "word": "ball",
+          "shortcut": "bal"
+        },
+        {
+          "word": "lab",
+          "shortcut": "lab;"
+        },
+        {
+          "word": "label",
+          "shortcut": "labl'"
+        }
+      ]
+    },
+    {
+      "signature": "ablm",
+      "unique_shortcuts": [
+        "albm",
+        "blam;"
+      ],
+      "entries": [
+        {
+          "word": "album",
+          "shortcut": "albm"
+        },
+        {
+          "word": "blame",
+          "shortcut": "blam;"
+        }
+      ]
+    },
+    {
+      "signature": "abr",
+      "unique_shortcuts": [
+        "Arab",
+        "bar;"
+      ],
+      "entries": [
+        {
+          "word": "Arab",
+          "shortcut": "Arab"
+        },
+        {
+          "word": "bar",
+          "shortcut": "bar;"
+        }
+      ]
+    },
+    {
+      "signature": "acep",
+      "unique_shortcuts": [
+        "pace",
+        "peac;"
+      ],
+      "entries": [
+        {
+          "word": "pace",
+          "shortcut": "pace"
+        },
+        {
+          "word": "peace",
+          "shortcut": "peac;"
+        }
+      ]
+    },
+    {
+      "signature": "acer",
+      "unique_shortcuts": [
+        "care",
+        "race;"
+      ],
+      "entries": [
+        {
+          "word": "care",
+          "shortcut": "care"
+        },
+        {
+          "word": "race",
+          "shortcut": "race;"
+        }
+      ]
+    },
+    {
+      "signature": "achs",
+      "unique_shortcuts": [
+        "cash",
+        "chas;"
+      ],
+      "entries": [
+        {
+          "word": "cash",
+          "shortcut": "cash"
+        },
+        {
+          "word": "chase",
+          "shortcut": "chas;"
+        }
+      ]
+    },
+    {
+      "signature": "acls",
+      "unique_shortcuts": [
+        "clas",
+        "scal;"
+      ],
+      "entries": [
+        {
+          "word": "class",
+          "shortcut": "clas"
+        },
+        {
+          "word": "scale",
+          "shortcut": "scal;"
+        }
+      ]
+    },
+    {
+      "signature": "acrt",
+      "unique_shortcuts": [
+        "actr",
+        "trac;"
+      ],
+      "entries": [
+        {
+          "word": "actor",
+          "shortcut": "actr"
+        },
+        {
+          "word": "trace",
+          "shortcut": "trac;"
+        }
+      ]
+    },
+    {
+      "signature": "acsu",
+      "unique_shortcuts": [
+        "caus",
+        "sauc;"
+      ],
+      "entries": [
+        {
+          "word": "cause",
+          "shortcut": "caus"
+        },
+        {
+          "word": "sauce",
+          "shortcut": "sauc;"
+        }
+      ]
+    },
+    {
+      "signature": "act",
+      "unique_shortcuts": [
+        "act",
+        "cat;"
+      ],
+      "entries": [
+        {
+          "word": "act",
+          "shortcut": "act"
+        },
+        {
+          "word": "cat",
+          "shortcut": "cat;"
+        }
+      ]
+    },
+    {
+      "signature": "ad",
+      "unique_shortcuts": [
+        "ad",
+        "da;"
+      ],
+      "entries": [
+        {
+          "word": "add",
+          "shortcut": "ad"
+        },
+        {
+          "word": "dad",
+          "shortcut": "da;"
+        }
+      ]
+    },
+    {
+      "signature": "adel",
+      "unique_shortcuts": [
+        "deal",
+        "lead;"
+      ],
+      "entries": [
+        {
+          "word": "deal",
+          "shortcut": "deal"
+        },
+        {
+          "word": "lead",
+          "shortcut": "lead;"
+        }
+      ]
+    },
+    {
+      "signature": "adgr",
+      "unique_shortcuts": [
+        "drag",
+        "grad;"
+      ],
+      "entries": [
+        {
+          "word": "drag",
+          "shortcut": "drag"
+        },
+        {
+          "word": "grade",
+          "shortcut": "grad;"
+        }
+      ]
+    },
+    {
+      "signature": "adir",
+      "unique_shortcuts": [
+        "dari",
+        "radi;"
+      ],
+      "entries": [
+        {
+          "word": "dare",
+          "shortcut": "dari"
+        },
+        {
+          "word": "radio",
+          "shortcut": "radi;"
+        }
+      ]
+    },
+    {
+      "signature": "adis",
+      "unique_shortcuts": [
+        "AIDS",
+        "asid;"
+      ],
+      "entries": [
+        {
+          "word": "AIDS",
+          "shortcut": "AIDS"
+        },
+        {
+          "word": "aside",
+          "shortcut": "asid;"
+        }
+      ]
+    },
+    {
+      "signature": "adly",
+      "unique_shortcuts": [
+        "daly",
+        "lady;"
+      ],
+      "entries": [
+        {
+          "word": "daily",
+          "shortcut": "daly"
+        },
+        {
+          "word": "lady",
+          "shortcut": "lady;"
+        }
+      ]
+    },
+    {
+      "signature": "admr",
+      "unique_shortcuts": [
+        "armd",
+        "drma;",
+        "dram'"
+      ],
+      "entries": [
+        {
+          "word": "armed",
+          "shortcut": "armd"
+        },
+        {
+          "word": "drama",
+          "shortcut": "drma;"
+        },
+        {
+          "word": "dream",
+          "shortcut": "dram'"
+        }
+      ]
+    },
+    {
+      "signature": "adn",
+      "unique_shortcuts": [
+        "and",
+        "DNA;"
+      ],
+      "entries": [
+        {
+          "word": "and",
+          "shortcut": "and"
+        },
+        {
+          "word": "DNA",
+          "shortcut": "DNA;"
+        }
+      ]
+    },
+    {
+      "signature": "adrw",
+      "unique_shortcuts": [
+        "awrd",
+        "draw;"
+      ],
+      "entries": [
+        {
+          "word": "award",
+          "shortcut": "awrd"
+        },
+        {
+          "word": "draw",
+          "shortcut": "draw;"
+        }
+      ]
+    },
+    {
+      "signature": "aegr",
+      "unique_shortcuts": [
+        "agre",
+        "eagr;",
+        "gear'"
+      ],
+      "entries": [
+        {
+          "word": "agree",
+          "shortcut": "agre"
+        },
+        {
+          "word": "eager",
+          "shortcut": "eagr;"
+        },
+        {
+          "word": "gear",
+          "shortcut": "gear'"
+        }
+      ]
+    },
+    {
+      "signature": "aeht",
+      "unique_shortcuts": [
+        "hate",
+        "heat;"
+      ],
+      "entries": [
+        {
+          "word": "hate",
+          "shortcut": "hate"
+        },
+        {
+          "word": "heat",
+          "shortcut": "heat;"
+        }
+      ]
+    },
+    {
+      "signature": "aekw",
+      "unique_shortcuts": [
+        "wake",
+        "weak;"
+      ],
+      "entries": [
+        {
+          "word": "wake",
+          "shortcut": "wake"
+        },
+        {
+          "word": "weak",
+          "shortcut": "weak;"
+        }
+      ]
+    },
+    {
+      "signature": "aelm",
+      "unique_shortcuts": [
+        "male",
+        "meal;"
+      ],
+      "entries": [
+        {
+          "word": "male",
+          "shortcut": "male"
+        },
+        {
+          "word": "meal",
+          "shortcut": "meal;"
+        }
+      ]
+    },
+    {
+      "signature": "aelp",
+      "unique_shortcuts": [
+        "aple",
+        "pale;"
+      ],
+      "entries": [
+        {
+          "word": "apple",
+          "shortcut": "aple"
+        },
+        {
+          "word": "pale",
+          "shortcut": "pale;"
+        }
+      ]
+    },
+    {
+      "signature": "aelr",
+      "unique_shortcuts": [
+        "earl",
+        "real;"
+      ],
+      "entries": [
+        {
+          "word": "early",
+          "shortcut": "earl"
+        },
+        {
+          "word": "real",
+          "shortcut": "real;"
+        }
+      ]
+    },
+    {
+      "signature": "aelt",
+      "unique_shortcuts": [
+        "late",
+        "tale;"
+      ],
+      "entries": [
+        {
+          "word": "late",
+          "shortcut": "late"
+        },
+        {
+          "word": "tale",
+          "shortcut": "tale;"
+        }
+      ]
+    },
+    {
+      "signature": "aemn",
+      "unique_shortcuts": [
+        "mean",
+        "name;"
+      ],
+      "entries": [
+        {
+          "word": "mean",
+          "shortcut": "mean"
+        },
+        {
+          "word": "name",
+          "shortcut": "name;"
+        }
+      ]
+    },
+    {
+      "signature": "aemt",
+      "unique_shortcuts": [
+        "mate",
+        "meat;",
+        "team'"
+      ],
+      "entries": [
+        {
+          "word": "mate",
+          "shortcut": "mate"
+        },
+        {
+          "word": "meat",
+          "shortcut": "meat;"
+        },
+        {
+          "word": "team",
+          "shortcut": "team'"
+        }
+      ]
+    },
+    {
+      "signature": "aenr",
+      "unique_shortcuts": [
+        "earn",
+        "near;"
+      ],
+      "entries": [
+        {
+          "word": "earn",
+          "shortcut": "earn"
+        },
+        {
+          "word": "near",
+          "shortcut": "near;"
+        }
+      ]
+    },
+    {
+      "signature": "aer",
+      "unique_shortcuts": [
+        "are",
+        "are;",
+        "ear'",
+        "era[",
+        "rae/"
+      ],
+      "entries": [
+        {
+          "word": "are",
+          "shortcut": "are"
+        },
+        {
+          "word": "area",
+          "shortcut": "are;"
+        },
+        {
+          "word": "ear",
+          "shortcut": "ear'"
+        },
+        {
+          "word": "era",
+          "shortcut": "era["
+        },
+        {
+          "word": "rare",
+          "shortcut": "rae/"
+        }
+      ]
+    },
+    {
+      "signature": "aert",
+      "unique_shortcuts": [
+        "rate",
+        "tear;"
+      ],
+      "entries": [
+        {
+          "word": "rate",
+          "shortcut": "rate"
+        },
+        {
+          "word": "tear",
+          "shortcut": "tear;"
+        }
+      ]
+    },
+    {
+      "signature": "aery",
+      "unique_shortcuts": [
+        "reay",
+        "year;"
+      ],
+      "entries": [
+        {
+          "word": "read",
+          "shortcut": "reay"
+        },
+        {
+          "word": "year",
+          "shortcut": "year;"
+        }
+      ]
+    },
+    {
+      "signature": "aes",
+      "unique_shortcuts": [
+        "eas",
+        "sea;"
+      ],
+      "entries": [
+        {
+          "word": "ease",
+          "shortcut": "eas"
+        },
+        {
+          "word": "sea",
+          "shortcut": "sea;"
+        }
+      ]
+    },
+    {
+      "signature": "aest",
+      "unique_shortcuts": [
+        "aset",
+        "east;",
+        "seat'"
+      ],
+      "entries": [
+        {
+          "word": "asset",
+          "shortcut": "aset"
+        },
+        {
+          "word": "east",
+          "shortcut": "east;"
+        },
+        {
+          "word": "seat",
+          "shortcut": "seat'"
+        }
+      ]
+    },
+    {
+      "signature": "aesy",
+      "unique_shortcuts": [
+        "easy",
+        "esay;"
+      ],
+      "entries": [
+        {
+          "word": "easy",
+          "shortcut": "easy"
+        },
+        {
+          "word": "essay",
+          "shortcut": "esay;"
+        }
+      ]
+    },
+    {
+      "signature": "aet",
+      "unique_shortcuts": [
+        "eat",
+        "tea;"
+      ],
+      "entries": [
+        {
+          "word": "eat",
+          "shortcut": "eat"
+        },
+        {
+          "word": "tea",
+          "shortcut": "tea;"
+        }
+      ]
+    },
+    {
+      "signature": "aflt",
+      "unique_shortcuts": [
+        "falt",
+        "flat;",
+        "flat'"
+      ],
+      "entries": [
+        {
+          "word": "fault",
+          "shortcut": "falt"
+        },
+        {
+          "word": "flat",
+          "shortcut": "flat;"
+        },
+        {
+          "word": "float",
+          "shortcut": "flat'"
+        }
+      ]
+    },
+    {
+      "signature": "afmr",
+      "unique_shortcuts": [
+        "farm",
+        "fram;"
+      ],
+      "entries": [
+        {
+          "word": "farm",
+          "shortcut": "farm"
+        },
+        {
+          "word": "frame",
+          "shortcut": "fram;"
+        }
+      ]
+    },
+    {
+      "signature": "afst",
+      "unique_shortcuts": [
+        "fast",
+        "staf;"
+      ],
+      "entries": [
+        {
+          "word": "fast",
+          "shortcut": "fast"
+        },
+        {
+          "word": "staff",
+          "shortcut": "staf;"
+        }
+      ]
+    },
+    {
+      "signature": "agin",
+      "unique_shortcuts": [
+        "agin",
+        "gain;"
+      ],
+      "entries": [
+        {
+          "word": "again",
+          "shortcut": "agin"
+        },
+        {
+          "word": "gain",
+          "shortcut": "gain;"
+        }
+      ]
+    },
+    {
+      "signature": "agln",
+      "unique_shortcuts": [
+        "alng",
+        "angl;"
+      ],
+      "entries": [
+        {
+          "word": "along",
+          "shortcut": "alng"
+        },
+        {
+          "word": "angle",
+          "shortcut": "angl;"
+        }
+      ]
+    },
+    {
+      "signature": "agnr",
+      "unique_shortcuts": [
+        "angr",
+        "angr;",
+        "rang'"
+      ],
+      "entries": [
+        {
+          "word": "anger",
+          "shortcut": "angr"
+        },
+        {
+          "word": "angry",
+          "shortcut": "angr;"
+        },
+        {
+          "word": "range",
+          "shortcut": "rang'"
+        }
+      ]
+    },
+    {
+      "signature": "ahps",
+      "unique_shortcuts": [
+        "phas",
+        "shap;"
+      ],
+      "entries": [
+        {
+          "word": "phase",
+          "shortcut": "phas"
+        },
+        {
+          "word": "shape",
+          "shortcut": "shap;"
+        }
+      ]
+    },
+    {
+      "signature": "aht",
+      "unique_shortcuts": [
+        "hat;",
+        "tha"
+      ],
+      "entries": [
+        {
+          "word": "hat",
+          "shortcut": "hat;"
+        },
+        {
+          "word": "that",
+          "shortcut": "tha"
+        }
+      ]
+    },
+    {
+      "signature": "airs",
+      "unique_shortcuts": [
+        "aris",
+        "rais;"
+      ],
+      "entries": [
+        {
+          "word": "arise",
+          "shortcut": "aris"
+        },
+        {
+          "word": "raise",
+          "shortcut": "rais;"
+        }
+      ]
+    },
+    {
+      "signature": "akmr",
+      "unique_shortcuts": [
+        "makr",
+        "mark;"
+      ],
+      "entries": [
+        {
+          "word": "maker",
+          "shortcut": "makr"
+        },
+        {
+          "word": "mark",
+          "shortcut": "mark;"
+        }
+      ]
+    },
+    {
+      "signature": "akst",
+      "unique_shortcuts": [
+        "stak",
+        "task;"
+      ],
+      "entries": [
+        {
+          "word": "stake",
+          "shortcut": "stak"
+        },
+        {
+          "word": "task",
+          "shortcut": "task;"
+        }
+      ]
+    },
+    {
+      "signature": "alno",
+      "unique_shortcuts": [
+        "alon",
+        "loan;"
+      ],
+      "entries": [
+        {
+          "word": "alone",
+          "shortcut": "alon"
+        },
+        {
+          "word": "loan",
+          "shortcut": "loan;"
+        }
+      ]
+    },
+    {
+      "signature": "alnp",
+      "unique_shortcuts": [
+        "panl",
+        "plan;",
+        "plan'"
+      ],
+      "entries": [
+        {
+          "word": "panel",
+          "shortcut": "panl"
+        },
+        {
+          "word": "plan",
+          "shortcut": "plan;"
+        },
+        {
+          "word": "plane",
+          "shortcut": "plan'"
+        }
+      ]
+    },
+    {
+      "signature": "alpy",
+      "unique_shortcuts": [
+        "aply",
+        "play;"
+      ],
+      "entries": [
+        {
+          "word": "apply",
+          "shortcut": "aply"
+        },
+        {
+          "word": "play",
+          "shortcut": "play;"
+        }
+      ]
+    },
+    {
+      "signature": "alrt",
+      "unique_shortcuts": [
+        "altr",
+        "latr;",
+        "tral'"
+      ],
+      "entries": [
+        {
+          "word": "alter",
+          "shortcut": "altr"
+        },
+        {
+          "word": "later",
+          "shortcut": "latr;"
+        },
+        {
+          "word": "trial",
+          "shortcut": "tral'"
+        }
+      ]
+    },
+    {
+      "signature": "alst",
+      "unique_shortcuts": [
+        "last",
+        "salt;",
+        "stal'"
+      ],
+      "entries": [
+        {
+          "word": "last",
+          "shortcut": "last"
+        },
+        {
+          "word": "salt",
+          "shortcut": "salt;"
+        },
+        {
+          "word": "steal",
+          "shortcut": "stal'"
+        }
+      ]
+    },
+    {
+      "signature": "alw",
+      "unique_shortcuts": [
+        "law",
+        "wal;"
+      ],
+      "entries": [
+        {
+          "word": "law",
+          "shortcut": "law"
+        },
+        {
+          "word": "wall",
+          "shortcut": "wal;"
+        }
+      ]
+    },
+    {
+      "signature": "aly",
+      "unique_shortcuts": [
+        "aly",
+        "lay;"
+      ],
+      "entries": [
+        {
+          "word": "ally",
+          "shortcut": "aly"
+        },
+        {
+          "word": "lay",
+          "shortcut": "lay;"
+        }
+      ]
+    },
+    {
+      "signature": "amry",
+      "unique_shortcuts": [
+        "army",
+        "mary;",
+        "mayr'"
+      ],
+      "entries": [
+        {
+          "word": "army",
+          "shortcut": "army"
+        },
+        {
+          "word": "marry",
+          "shortcut": "mary;"
+        },
+        {
+          "word": "mayor",
+          "shortcut": "mayr'"
+        }
+      ]
+    },
+    {
+      "signature": "aprt",
+      "unique_shortcuts": [
+        "aprt",
+        "part;",
+        "part'"
+      ],
+      "entries": [
+        {
+          "word": "apart",
+          "shortcut": "aprt"
+        },
+        {
+          "word": "part",
+          "shortcut": "part;"
+        },
+        {
+          "word": "party",
+          "shortcut": "part'"
+        }
+      ]
+    },
+    {
+      "signature": "art",
+      "unique_shortcuts": [
+        "art",
+        "trat;"
+      ],
+      "entries": [
+        {
+          "word": "art",
+          "shortcut": "art"
+        },
+        {
+          "word": "treat",
+          "shortcut": "trat;"
+        }
+      ]
+    },
+    {
+      "signature": "arw",
+      "unique_shortcuts": [
+        "awar",
+        "raw;",
+        "war'"
+      ],
+      "entries": [
+        {
+          "word": "aware",
+          "shortcut": "awar"
+        },
+        {
+          "word": "raw",
+          "shortcut": "raw;"
+        },
+        {
+          "word": "war",
+          "shortcut": "war'"
+        }
+      ]
+    },
+    {
+      "signature": "ast",
+      "unique_shortcuts": [
+        "stat",
+        "tast;"
+      ],
+      "entries": [
+        {
+          "word": "state",
+          "shortcut": "stat"
+        },
+        {
+          "word": "taste",
+          "shortcut": "tast;"
+        }
+      ]
+    },
+    {
+      "signature": "awy",
+      "unique_shortcuts": [
+        "awy",
+        "way;"
+      ],
+      "entries": [
+        {
+          "word": "away",
+          "shortcut": "awy"
+        },
+        {
+          "word": "way",
+          "shortcut": "way;"
+        }
+      ]
+    },
+    {
+      "signature": "begn",
+      "unique_shortcuts": [
+        "begn",
+        "beng;"
+      ],
+      "entries": [
+        {
+          "word": "begin",
+          "shortcut": "begn"
+        },
+        {
+          "word": "being",
+          "shortcut": "beng;"
+        }
+      ]
+    },
+    {
+      "signature": "bil",
+      "unique_shortcuts": [
+        "bibl",
+        "bil;"
+      ],
+      "entries": [
+        {
+          "word": "bible",
+          "shortcut": "bibl"
+        },
+        {
+          "word": "bill",
+          "shortcut": "bil;"
+        }
+      ]
+    },
+    {
+      "signature": "blow",
+      "unique_shortcuts": [
+        "blow",
+        "bowl;"
+      ],
+      "entries": [
+        {
+          "word": "blow",
+          "shortcut": "blow"
+        },
+        {
+          "word": "bowl",
+          "shortcut": "bowl;"
+        }
+      ]
+    },
+    {
+      "signature": "bnru",
+      "unique_shortcuts": [
+        "burn",
+        "urbn;"
+      ],
+      "entries": [
+        {
+          "word": "burn",
+          "shortcut": "burn"
+        },
+        {
+          "word": "urban",
+          "shortcut": "urbn;"
+        }
+      ]
+    },
+    {
+      "signature": "bruy",
+      "unique_shortcuts": [
+        "bury",
+        "buyr;"
+      ],
+      "entries": [
+        {
+          "word": "bury",
+          "shortcut": "bury"
+        },
+        {
+          "word": "buyer",
+          "shortcut": "buyr;"
+        }
+      ]
+    },
+    {
+      "signature": "chir",
+      "unique_shortcuts": [
+        "chir",
+        "rich;"
+      ],
+      "entries": [
+        {
+          "word": "chair",
+          "shortcut": "chir"
+        },
+        {
+          "word": "rich",
+          "shortcut": "rich;"
+        }
+      ]
+    },
+    {
+      "signature": "cklu",
+      "unique_shortcuts": [
+        "luck",
+        "luck;"
+      ],
+      "entries": [
+        {
+          "word": "luck",
+          "shortcut": "luck"
+        },
+        {
+          "word": "lucky",
+          "shortcut": "luck;"
+        }
+      ]
+    },
+    {
+      "signature": "clo",
+      "unique_shortcuts": [
+        "col",
+        "locl;"
+      ],
+      "entries": [
+        {
+          "word": "cool",
+          "shortcut": "col"
+        },
+        {
+          "word": "local",
+          "shortcut": "locl;"
+        }
+      ]
+    },
+    {
+      "signature": "cors",
+      "unique_shortcuts": [
+        "cros",
+        "scor;"
+      ],
+      "entries": [
+        {
+          "word": "cross",
+          "shortcut": "cros"
+        },
+        {
+          "word": "score",
+          "shortcut": "scor;"
+        }
+      ]
+    },
+    {
+      "signature": "den",
+      "unique_shortcuts": [
+        "end",
+        "ned;"
+      ],
+      "entries": [
+        {
+          "word": "end",
+          "shortcut": "end"
+        },
+        {
+          "word": "need",
+          "shortcut": "ned;"
+        }
+      ]
+    },
+    {
+      "signature": "der",
+      "unique_shortcuts": [
+        "der",
+        "red;"
+      ],
+      "entries": [
+        {
+          "word": "deer",
+          "shortcut": "der"
+        },
+        {
+          "word": "red",
+          "shortcut": "red;"
+        }
+      ]
+    },
+    {
+      "signature": "dgo",
+      "unique_shortcuts": [
+        "dog",
+        "God;",
+        "god'"
+      ],
+      "entries": [
+        {
+          "word": "dog",
+          "shortcut": "dog"
+        },
+        {
+          "word": "God",
+          "shortcut": "God;"
+        },
+        {
+          "word": "good",
+          "shortcut": "god'"
+        }
+      ]
+    },
+    {
+      "signature": "dgru",
+      "unique_shortcuts": [
+        "drug",
+        "gurd;"
+      ],
+      "entries": [
+        {
+          "word": "drug",
+          "shortcut": "drug"
+        },
+        {
+          "word": "guard",
+          "shortcut": "gurd;"
+        }
+      ]
+    },
+    {
+      "signature": "dirt",
+      "unique_shortcuts": [
+        "dirt",
+        "dirt;",
+        "tird'"
+      ],
+      "entries": [
+        {
+          "word": "dirt",
+          "shortcut": "dirt"
+        },
+        {
+          "word": "dirty",
+          "shortcut": "dirt;"
+        },
+        {
+          "word": "tired",
+          "shortcut": "tird'"
+        }
+      ]
+    },
+    {
+      "signature": "dnow",
+      "unique_shortcuts": [
+        "down",
+        "wond;"
+      ],
+      "entries": [
+        {
+          "word": "down",
+          "shortcut": "down"
+        },
+        {
+          "word": "wound",
+          "shortcut": "wond;"
+        }
+      ]
+    },
+    {
+      "signature": "dor",
+      "unique_shortcuts": [
+        "dor",
+        "ordr;"
+      ],
+      "entries": [
+        {
+          "word": "door",
+          "shortcut": "dor"
+        },
+        {
+          "word": "order",
+          "shortcut": "ordr;"
+        }
+      ]
+    },
+    {
+      "signature": "efil",
+      "unique_shortcuts": [
+        "file",
+        "life;"
+      ],
+      "entries": [
+        {
+          "word": "file",
+          "shortcut": "file"
+        },
+        {
+          "word": "life",
+          "shortcut": "life;"
+        }
+      ]
+    },
+    {
+      "signature": "efl",
+      "unique_shortcuts": [
+        "feel",
+        "fle;"
+      ],
+      "entries": [
+        {
+          "word": "feel",
+          "shortcut": "feel"
+        },
+        {
+          "word": "flee",
+          "shortcut": "fle;"
+        }
+      ]
+    },
+    {
+      "signature": "efr",
+      "unique_shortcuts": [
+        "fre",
+        "refr;"
+      ],
+      "entries": [
+        {
+          "word": "free",
+          "shortcut": "fre"
+        },
+        {
+          "word": "refer",
+          "shortcut": "refr;"
+        }
+      ]
+    },
+    {
+      "signature": "egl",
+      "unique_shortcuts": [
+        "leg",
+        "legl;"
+      ],
+      "entries": [
+        {
+          "word": "leg",
+          "shortcut": "leg"
+        },
+        {
+          "word": "legal",
+          "shortcut": "legl;"
+        }
+      ]
+    },
+    {
+      "signature": "ehlo",
+      "unique_shortcuts": [
+        "helo",
+        "hole;"
+      ],
+      "entries": [
+        {
+          "word": "hello",
+          "shortcut": "helo"
+        },
+        {
+          "word": "hole",
+          "shortcut": "hole;"
+        }
+      ]
+    },
+    {
+      "signature": "ehrt",
+      "unique_shortcuts": [
+        "hert;",
+        "ther",
+        "thre'"
+      ],
+      "entries": [
+        {
+          "word": "heart",
+          "shortcut": "hert;"
+        },
+        {
+          "word": "there",
+          "shortcut": "ther"
+        },
+        {
+          "word": "three",
+          "shortcut": "thre'"
+        }
+      ]
+    },
+    {
+      "signature": "ehst",
+      "unique_shortcuts": [
+        "shet;",
+        "thes"
+      ],
+      "entries": [
+        {
+          "word": "sheet",
+          "shortcut": "shet;"
+        },
+        {
+          "word": "these",
+          "shortcut": "thes"
+        }
+      ]
+    },
+    {
+      "signature": "eimt",
+      "unique_shortcuts": [
+        "item",
+        "time;"
+      ],
+      "entries": [
+        {
+          "word": "item",
+          "shortcut": "item"
+        },
+        {
+          "word": "time",
+          "shortcut": "time;"
+        }
+      ]
+    },
+    {
+      "signature": "eisz",
+      "unique_shortcuts": [
+        "seiz",
+        "size;"
+      ],
+      "entries": [
+        {
+          "word": "seize",
+          "shortcut": "seiz"
+        },
+        {
+          "word": "size",
+          "shortcut": "size;"
+        }
+      ]
+    },
+    {
+      "signature": "els",
+      "unique_shortcuts": [
+        "els",
+        "les;",
+        "sel'"
+      ],
+      "entries": [
+        {
+          "word": "else",
+          "shortcut": "els"
+        },
+        {
+          "word": "less",
+          "shortcut": "les;"
+        },
+        {
+          "word": "sell",
+          "shortcut": "sel'"
+        }
+      ]
+    },
+    {
+      "signature": "elst",
+      "unique_shortcuts": [
+        "lest",
+        "stel;"
+      ],
+      "entries": [
+        {
+          "word": "least",
+          "shortcut": "lest"
+        },
+        {
+          "word": "steel",
+          "shortcut": "stel;"
+        }
+      ]
+    },
+    {
+      "signature": "elt",
+      "unique_shortcuts": [
+        "let",
+        "tel;"
+      ],
+      "entries": [
+        {
+          "word": "let",
+          "shortcut": "let"
+        },
+        {
+          "word": "tell",
+          "shortcut": "tel;"
+        }
+      ]
+    },
+    {
+      "signature": "emrt",
+      "unique_shortcuts": [
+        "metr",
+        "term;"
+      ],
+      "entries": [
+        {
+          "word": "meter",
+          "shortcut": "metr"
+        },
+        {
+          "word": "term",
+          "shortcut": "term;"
+        }
+      ]
+    },
+    {
+      "signature": "ems",
+      "unique_shortcuts": [
+        "mes",
+        "sem;"
+      ],
+      "entries": [
+        {
+          "word": "mess",
+          "shortcut": "mes"
+        },
+        {
+          "word": "seem",
+          "shortcut": "sem;"
+        }
+      ]
+    },
+    {
+      "signature": "eno",
+      "unique_shortcuts": [
+        "noe",
+        "one;"
+      ],
+      "entries": [
+        {
+          "word": "none",
+          "shortcut": "noe"
+        },
+        {
+          "word": "one",
+          "shortcut": "one;"
+        }
+      ]
+    },
+    {
+      "signature": "enot",
+      "unique_shortcuts": [
+        "note",
+        "tone;"
+      ],
+      "entries": [
+        {
+          "word": "note",
+          "shortcut": "note"
+        },
+        {
+          "word": "tone",
+          "shortcut": "tone;"
+        }
+      ]
+    },
+    {
+      "signature": "enrt",
+      "unique_shortcuts": [
+        "entr",
+        "entr;"
+      ],
+      "entries": [
+        {
+          "word": "enter",
+          "shortcut": "entr"
+        },
+        {
+          "word": "entry",
+          "shortcut": "entr;"
+        }
+      ]
+    },
+    {
+      "signature": "enrv",
+      "unique_shortcuts": [
+        "nerv",
+        "nevr;"
+      ],
+      "entries": [
+        {
+          "word": "nerve",
+          "shortcut": "nerv"
+        },
+        {
+          "word": "never",
+          "shortcut": "nevr;"
+        }
+      ]
+    },
+    {
+      "signature": "ent",
+      "unique_shortcuts": [
+        "net",
+        "ten;",
+        "ten'",
+        "ten["
+      ],
+      "entries": [
+        {
+          "word": "net",
+          "shortcut": "net"
+        },
+        {
+          "word": "teen",
+          "shortcut": "ten;"
+        },
+        {
+          "word": "ten",
+          "shortcut": "ten'"
+        },
+        {
+          "word": "tent",
+          "shortcut": "ten["
+        }
+      ]
+    },
+    {
+      "signature": "epru",
+      "unique_shortcuts": [
+        "pure",
+        "uper;"
+      ],
+      "entries": [
+        {
+          "word": "pure",
+          "shortcut": "pure"
+        },
+        {
+          "word": "upper",
+          "shortcut": "uper;"
+        }
+      ]
+    },
+    {
+      "signature": "ersu",
+      "unique_shortcuts": [
+        "sure",
+        "user;"
+      ],
+      "entries": [
+        {
+          "word": "sure",
+          "shortcut": "sure"
+        },
+        {
+          "word": "user",
+          "shortcut": "user;"
+        }
+      ]
+    },
+    {
+      "signature": "ervy",
+      "unique_shortcuts": [
+        "evry",
+        "very;"
+      ],
+      "entries": [
+        {
+          "word": "every",
+          "shortcut": "evry"
+        },
+        {
+          "word": "very",
+          "shortcut": "very;"
+        }
+      ]
+    },
+    {
+      "signature": "est",
+      "unique_shortcuts": [
+        "set",
+        "tes;"
+      ],
+      "entries": [
+        {
+          "word": "set",
+          "shortcut": "set"
+        },
+        {
+          "word": "test",
+          "shortcut": "tes;"
+        }
+      ]
+    },
+    {
+      "signature": "estw",
+      "unique_shortcuts": [
+        "swet",
+        "west;"
+      ],
+      "entries": [
+        {
+          "word": "sweet",
+          "shortcut": "swet"
+        },
+        {
+          "word": "west",
+          "shortcut": "west;"
+        }
+      ]
+    },
+    {
+      "signature": "esu",
+      "unique_shortcuts": [
+        "sue",
+        "use;"
+      ],
+      "entries": [
+        {
+          "word": "sue",
+          "shortcut": "sue"
+        },
+        {
+          "word": "use",
+          "shortcut": "use;"
+        }
+      ]
+    },
+    {
+      "signature": "fgit",
+      "unique_shortcuts": [
+        "figt",
+        "gift;"
+      ],
+      "entries": [
+        {
+          "word": "fight",
+          "shortcut": "figt"
+        },
+        {
+          "word": "gift",
+          "shortcut": "gift;"
+        }
+      ]
+    },
+    {
+      "signature": "fhls",
+      "unique_shortcuts": [
+        "flsh",
+        "shlf;"
+      ],
+      "entries": [
+        {
+          "word": "flesh",
+          "shortcut": "flsh"
+        },
+        {
+          "word": "shelf",
+          "shortcut": "shlf;"
+        }
+      ]
+    },
+    {
+      "signature": "fit",
+      "unique_shortcuts": [
+        "fift",
+        "fift;",
+        "fit'"
+      ],
+      "entries": [
+        {
+          "word": "fifth",
+          "shortcut": "fift"
+        },
+        {
+          "word": "fifty",
+          "shortcut": "fift;"
+        },
+        {
+          "word": "fit",
+          "shortcut": "fit'"
+        }
+      ]
+    },
+    {
+      "signature": "fmor",
+      "unique_shortcuts": [
+        "form",
+        "from;"
+      ],
+      "entries": [
+        {
+          "word": "form",
+          "shortcut": "form"
+        },
+        {
+          "word": "from",
+          "shortcut": "from;"
+        }
+      ]
+    },
+    {
+      "signature": "for",
+      "unique_shortcuts": [
+        "for",
+        "rof;"
+      ],
+      "entries": [
+        {
+          "word": "for",
+          "shortcut": "for"
+        },
+        {
+          "word": "roof",
+          "shortcut": "rof;"
+        }
+      ]
+    },
+    {
+      "signature": "ginr",
+      "unique_shortcuts": [
+        "grin",
+        "ring;"
+      ],
+      "entries": [
+        {
+          "word": "grain",
+          "shortcut": "grin"
+        },
+        {
+          "word": "ring",
+          "shortcut": "ring;"
+        }
+      ]
+    },
+    {
+      "signature": "gins",
+      "unique_shortcuts": [
+        "sign",
+        "sing;"
+      ],
+      "entries": [
+        {
+          "word": "sign",
+          "shortcut": "sign"
+        },
+        {
+          "word": "sing",
+          "shortcut": "sing;"
+        }
+      ]
+    },
+    {
+      "signature": "hist",
+      "unique_shortcuts": [
+        "shit",
+        "this;"
+      ],
+      "entries": [
+        {
+          "word": "shit",
+          "shortcut": "shit"
+        },
+        {
+          "word": "this",
+          "shortcut": "this;"
+        }
+      ]
+    },
+    {
+      "signature": "hitw",
+      "unique_shortcuts": [
+        "whit",
+        "with;"
+      ],
+      "entries": [
+        {
+          "word": "white",
+          "shortcut": "whit"
+        },
+        {
+          "word": "with",
+          "shortcut": "with;"
+        }
+      ]
+    },
+    {
+      "signature": "hknt",
+      "unique_shortcuts": [
+        "thnk",
+        "thnk;"
+      ],
+      "entries": [
+        {
+          "word": "thank",
+          "shortcut": "thnk"
+        },
+        {
+          "word": "think",
+          "shortcut": "thnk;"
+        }
+      ]
+    },
+    {
+      "signature": "hors",
+      "unique_shortcuts": [
+        "hors",
+        "shor;"
+      ],
+      "entries": [
+        {
+          "word": "horse",
+          "shortcut": "hors"
+        },
+        {
+          "word": "shore",
+          "shortcut": "shor;"
+        }
+      ]
+    },
+    {
+      "signature": "host",
+      "unique_shortcuts": [
+        "host;",
+        "shot'",
+        "shot/",
+        "soth[",
+        "thos"
+      ],
+      "entries": [
+        {
+          "word": "host",
+          "shortcut": "host;"
+        },
+        {
+          "word": "shoot",
+          "shortcut": "shot'"
+        },
+        {
+          "word": "shot",
+          "shortcut": "shot/"
+        },
+        {
+          "word": "south",
+          "shortcut": "soth["
+        },
+        {
+          "word": "those",
+          "shortcut": "thos"
+        }
+      ]
+    },
+    {
+      "signature": "hosw",
+      "unique_shortcuts": [
+        "show",
+        "whos;"
+      ],
+      "entries": [
+        {
+          "word": "show",
+          "shortcut": "show"
+        },
+        {
+          "word": "whose",
+          "shortcut": "whos;"
+        }
+      ]
+    },
+    {
+      "signature": "hot",
+      "unique_shortcuts": [
+        "hot",
+        "toth;"
+      ],
+      "entries": [
+        {
+          "word": "hot",
+          "shortcut": "hot"
+        },
+        {
+          "word": "tooth",
+          "shortcut": "toth;"
+        }
+      ]
+    },
+    {
+      "signature": "how",
+      "unique_shortcuts": [
+        "how",
+        "who;"
+      ],
+      "entries": [
+        {
+          "word": "how",
+          "shortcut": "how"
+        },
+        {
+          "word": "who",
+          "shortcut": "who;"
+        }
+      ]
+    },
+    {
+      "signature": "hstu",
+      "unique_shortcuts": [
+        "shut'",
+        "shut;",
+        "thus"
+      ],
+      "entries": [
+        {
+          "word": "shout",
+          "shortcut": "shut'"
+        },
+        {
+          "word": "shut",
+          "shortcut": "shut;"
+        },
+        {
+          "word": "thus",
+          "shortcut": "thus"
+        }
+      ]
+    },
+    {
+      "signature": "ikns",
+      "unique_shortcuts": [
+        "sink",
+        "skin;"
+      ],
+      "entries": [
+        {
+          "word": "sink",
+          "shortcut": "sink"
+        },
+        {
+          "word": "skin",
+          "shortcut": "skin;"
+        }
+      ]
+    },
+    {
+      "signature": "iks",
+      "unique_shortcuts": [
+        "kis",
+        "ski;"
+      ],
+      "entries": [
+        {
+          "word": "kiss",
+          "shortcut": "kis"
+        },
+        {
+          "word": "ski",
+          "shortcut": "ski;"
+        }
+      ]
+    },
+    {
+      "signature": "ilst",
+      "unique_shortcuts": [
+        "list",
+        "stil;"
+      ],
+      "entries": [
+        {
+          "word": "list",
+          "shortcut": "list"
+        },
+        {
+          "word": "still",
+          "shortcut": "stil;"
+        }
+      ]
+    },
+    {
+      "signature": "ist",
+      "unique_shortcuts": [
+        "its",
+        "sit;"
+      ],
+      "entries": [
+        {
+          "word": "its",
+          "shortcut": "its"
+        },
+        {
+          "word": "sit",
+          "shortcut": "sit;"
+        }
+      ]
+    },
+    {
+      "signature": "korw",
+      "unique_shortcuts": [
+        "work",
+        "work;"
+      ],
+      "entries": [
+        {
+          "word": "work",
+          "shortcut": "work"
+        },
+        {
+          "word": "works",
+          "shortcut": "work;"
+        }
+      ]
+    },
+    {
+      "signature": "los",
+      "unique_shortcuts": [
+        "loos",
+        "los;"
+      ],
+      "entries": [
+        {
+          "word": "loose",
+          "shortcut": "loos"
+        },
+        {
+          "word": "loss",
+          "shortcut": "los;"
+        }
+      ]
+    },
+    {
+      "signature": "lost",
+      "unique_shortcuts": [
+        "lost",
+        "lots;"
+      ],
+      "entries": [
+        {
+          "word": "lost",
+          "shortcut": "lost"
+        },
+        {
+          "word": "lots",
+          "shortcut": "lots;"
+        }
+      ]
+    },
+    {
+      "signature": "lot",
+      "unique_shortcuts": [
+        "lot",
+        "tol;",
+        "totl'"
+      ],
+      "entries": [
+        {
+          "word": "lot",
+          "shortcut": "lot"
+        },
+        {
+          "word": "tool",
+          "shortcut": "tol;"
+        },
+        {
+          "word": "total",
+          "shortcut": "totl'"
+        }
+      ]
+    },
+    {
+      "signature": "mnot",
+      "unique_shortcuts": [
+        "mont",
+        "mont;"
+      ],
+      "entries": [
+        {
+          "word": "month",
+          "shortcut": "mont"
+        },
+        {
+          "word": "mount",
+          "shortcut": "mont;"
+        }
+      ]
+    },
+    {
+      "signature": "mrst",
+      "unique_shortcuts": [
+        "smrt",
+        "strm;"
+      ],
+      "entries": [
+        {
+          "word": "smart",
+          "shortcut": "smrt"
+        },
+        {
+          "word": "storm",
+          "shortcut": "strm;"
+        }
+      ]
+    },
+    {
+      "signature": "not",
+      "unique_shortcuts": [
+        "not",
+        "ont;"
+      ],
+      "entries": [
+        {
+          "word": "not",
+          "shortcut": "not"
+        },
+        {
+          "word": "onto",
+          "shortcut": "ont;"
+        }
+      ]
+    },
+    {
+      "signature": "now",
+      "unique_shortcuts": [
+        "now",
+        "own;",
+        "won'"
+      ],
+      "entries": [
+        {
+          "word": "now",
+          "shortcut": "now"
+        },
+        {
+          "word": "own",
+          "shortcut": "own;"
+        },
+        {
+          "word": "won",
+          "shortcut": "won'"
+        }
+      ]
+    },
+    {
+      "signature": "opr",
+      "unique_shortcuts": [
+        "por",
+        "pror;"
+      ],
+      "entries": [
+        {
+          "word": "poor",
+          "shortcut": "por"
+        },
+        {
+          "word": "prior",
+          "shortcut": "pror;"
+        }
+      ]
+    },
+    {
+      "signature": "oprt",
+      "unique_shortcuts": [
+        "port",
+        "trop;"
+      ],
+      "entries": [
+        {
+          "word": "port",
+          "shortcut": "port"
+        },
+        {
+          "word": "troop",
+          "shortcut": "trop;"
+        }
+      ]
+    },
+    {
+      "signature": "opst",
+      "unique_shortcuts": [
+        "post",
+        "spot;",
+        "stop'"
+      ],
+      "entries": [
+        {
+          "word": "post",
+          "shortcut": "post"
+        },
+        {
+          "word": "spot",
+          "shortcut": "spot;"
+        },
+        {
+          "word": "stop",
+          "shortcut": "stop'"
+        }
+      ]
+    },
+    {
+      "signature": "opt",
+      "unique_shortcuts": [
+        "pot",
+        "top;"
+      ],
+      "entries": [
+        {
+          "word": "pot",
+          "shortcut": "pot"
+        },
+        {
+          "word": "top",
+          "shortcut": "top;"
+        }
+      ]
+    },
+    {
+      "signature": "orst",
+      "unique_shortcuts": [
+        "sort",
+        "stor;"
+      ],
+      "entries": [
+        {
+          "word": "sort",
+          "shortcut": "sort"
+        },
+        {
+          "word": "store",
+          "shortcut": "stor;"
+        }
+      ]
+    },
+    {
+      "signature": "orsy",
+      "unique_shortcuts": [
+        "sory",
+        "yors;"
+      ],
+      "entries": [
+        {
+          "word": "sorry",
+          "shortcut": "sory"
+        },
+        {
+          "word": "yours",
+          "shortcut": "yors;"
+        }
+      ]
+    },
+    {
+      "signature": "ortu",
+      "unique_shortcuts": [
+        "rout",
+        "tour;"
+      ],
+      "entries": [
+        {
+          "word": "route",
+          "shortcut": "rout"
+        },
+        {
+          "word": "tour",
+          "shortcut": "tour;"
+        }
+      ]
+    },
+    {
+      "signature": "prst",
+      "unique_shortcuts": [
+        "sprt",
+        "strp;"
+      ],
+      "entries": [
+        {
+          "word": "sport",
+          "shortcut": "sprt"
+        },
+        {
+          "word": "strip",
+          "shortcut": "strp;"
+        }
+      ]
+    },
+    {
+      "signature": "rst",
+      "unique_shortcuts": [
+        "strt",
+        "trst;"
+      ],
+      "entries": [
+        {
+          "word": "start",
+          "shortcut": "strt"
+        },
+        {
+          "word": "trust",
+          "shortcut": "trst;"
+        }
+      ]
+    }
+  ]
+}

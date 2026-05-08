@@ -14,9 +14,9 @@ final class ChordDictionaryTests: XCTestCase {
         timing_window_ms: 80
 
         words:
-          prb: problem
-          wh: with
-          txn: transaction
+          problem: prb
+          with: wh
+          transaction: txn
         """
 
         try dictionary.loadFromString(yaml)
@@ -28,8 +28,8 @@ final class ChordDictionaryTests: XCTestCase {
     func testLookupWithNormalizedSignature() throws {
         let yaml = """
         words:
-          prb: problem
-          wh: with
+          problem: prb
+          with: wh
         """
         try dictionary.loadFromString(yaml)
 
@@ -41,7 +41,7 @@ final class ChordDictionaryTests: XCTestCase {
     func testLookupNoMatch() throws {
         let yaml = """
         words:
-          prb: problem
+          problem: prb
         """
         try dictionary.loadFromString(yaml)
 
@@ -51,7 +51,7 @@ final class ChordDictionaryTests: XCTestCase {
     func testLookupSingleCharReturnsNil() throws {
         let yaml = """
         words:
-          a: apple
+          apple: a
         """
         try dictionary.loadFromString(yaml)
 
@@ -63,7 +63,7 @@ final class ChordDictionaryTests: XCTestCase {
         let yamlTooLow = """
         timing_window_ms: 10
         words:
-          ab: test
+          test: ab
         """
         try dictionary.loadFromString(yamlTooLow)
         XCTAssertEqual(dictionary.timingWindowMs, 30)
@@ -71,7 +71,7 @@ final class ChordDictionaryTests: XCTestCase {
         let yamlTooHigh = """
         timing_window_ms: 500
         words:
-          ab: test
+          test: ab
         """
         try dictionary.loadFromString(yamlTooHigh)
         XCTAssertEqual(dictionary.timingWindowMs, 150)
@@ -80,7 +80,7 @@ final class ChordDictionaryTests: XCTestCase {
     func testDefaultTimingWindow() throws {
         let yaml = """
         words:
-          ab: test
+          test: ab
         """
         try dictionary.loadFromString(yaml)
         XCTAssertEqual(dictionary.timingWindowMs, 70)
@@ -109,7 +109,7 @@ final class ChordDictionaryTests: XCTestCase {
     func testOrderIndependentLookup() throws {
         let yaml = """
         words:
-          abc: alphabet
+          alphabet: abc
         """
         try dictionary.loadFromString(yaml)
 

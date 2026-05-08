@@ -74,7 +74,7 @@ final class ConfigManager {
             .deletingLastPathComponent()
             .deletingLastPathComponent()
             .deletingLastPathComponent()
-        let defaultDictionaryURL = projectRootURL.appendingPathComponent("default_dictionary.yaml")
+        let defaultDictionaryURL = projectRootURL.appendingPathComponent("default-dictionary.json")
 
         guard FileManager.default.fileExists(atPath: defaultDictionaryURL.path) else {
             return

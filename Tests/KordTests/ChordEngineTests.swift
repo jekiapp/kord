@@ -13,9 +13,9 @@ final class ChordEngineTests: XCTestCase {
         try! dictionary.loadFromString("""
         timing_window_ms: 70
         words:
-          prb: problem
-          wh: with
-          th: the
+          problem: prb
+          with: wh
+          the: th
         """)
         engine = ChordEngine(dictionary: dictionary)
         delegate = MockEngineDelegate()
@@ -64,8 +64,9 @@ final class ChordEngineTests: XCTestCase {
     }
 
     func testTimerCommitsChord() {
-        _ = engine.handleKeyEvent(makeKeyEvent(keyCode: 13, char: "w", type: .keyDown))
-        _ = engine.handleKeyEvent(makeKeyEvent(keyCode: 4, char: "h", type: .keyDown))
+        _ = engine.handleKeyEvent(makeKeyEvent(keyCode: 35, char: "p", type: .keyDown))
+        _ = engine.handleKeyEvent(makeKeyEvent(keyCode: 15, char: "r", type: .keyDown))
+        _ = engine.handleKeyEvent(makeKeyEvent(keyCode: 11, char: "b", type: .keyDown))
 
         let expectation = XCTestExpectation(description: "chord recognized")
         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100)) {
@@ -74,7 +75,7 @@ final class ChordEngineTests: XCTestCase {
         wait(for: [expectation], timeout: 1.0)
 
         XCTAssertEqual(engine.state, .idle)
-        XCTAssertEqual(delegate.recognizedExpansion, "with")
+        XCTAssertEqual(delegate.recognizedExpansion, "problem")
     }
 
     func testTimerReplaysSingleKey() {

@@ -78,7 +78,7 @@ private struct DictionaryTab: View {
                     }
                 }
 
-                Text("YAML file mapping chord keys to expansions. Changes are detected automatically.")
+                Text("JSON file mapping words to shortcuts. Changes are detected automatically.")
                     .font(.caption)
                     .foregroundColor(.secondary)
 
@@ -87,12 +87,14 @@ private struct DictionaryTab: View {
                 Text("Format Example:")
                     .font(.subheadline)
                 Text("""
-                    timing_window_ms: 70
-
-                    words:
-                      prb: problem
-                      wh: with
-                      txn: transaction
+                    {
+                      "timing_window_ms": 70,
+                      "words": {
+                        "problem": "prb",
+                        "with": "wh",
+                        "transaction": "txn"
+                      }
+                    }
                     """)
                     .font(.system(.caption, design: .monospaced))
                     .padding(8)
@@ -103,7 +105,7 @@ private struct DictionaryTab: View {
         .padding()
         .fileImporter(
             isPresented: $showFilePicker,
-            allowedContentTypes: [.yaml],
+            allowedContentTypes: [.json],
             onCompletion: { result in
                 if case .success(let url) = result {
                     settings.dictionaryPath = url.path

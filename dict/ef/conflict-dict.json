@@ -1,0 +1,2298 @@
+{
+  "source": "dict/ef/ef-dictionary.json",
+  "rules": "All shortcut anagram conflicts are included, including suffix/symbol variants. Non-suffixed shortcuts are listed first within each conflict group.",
+  "total_shortcuts": 1159,
+  "conflict_group_count": 156,
+  "conflicts": [
+    {
+      "anagram": "abdl",
+      "count": 2,
+      "entries": [
+        {
+          "word": "badly",
+          "shortcut": "badl"
+        },
+        {
+          "word": "blade",
+          "shortcut": "blad;"
+        }
+      ]
+    },
+    {
+      "anagram": "abdr",
+      "count": 2,
+      "entries": [
+        {
+          "word": "bread",
+          "shortcut": "brad"
+        },
+        {
+          "word": "broad",
+          "shortcut": "brad;"
+        }
+      ]
+    },
+    {
+      "anagram": "abl",
+      "count": 3,
+      "entries": [
+        {
+          "word": "ball",
+          "shortcut": "bal"
+        },
+        {
+          "word": "label",
+          "shortcut": "lab'"
+        },
+        {
+          "word": "lab",
+          "shortcut": "lab;"
+        }
+      ]
+    },
+    {
+      "anagram": "ablm",
+      "count": 2,
+      "entries": [
+        {
+          "word": "album",
+          "shortcut": "albm"
+        },
+        {
+          "word": "blame",
+          "shortcut": "blam;"
+        }
+      ]
+    },
+    {
+      "anagram": "acep",
+      "count": 2,
+      "entries": [
+        {
+          "word": "pace",
+          "shortcut": "pace"
+        },
+        {
+          "word": "peace",
+          "shortcut": "peac;"
+        }
+      ]
+    },
+    {
+      "anagram": "acer",
+      "count": 2,
+      "entries": [
+        {
+          "word": "care",
+          "shortcut": "care"
+        },
+        {
+          "word": "race",
+          "shortcut": "race;"
+        }
+      ]
+    },
+    {
+      "anagram": "achs",
+      "count": 2,
+      "entries": [
+        {
+          "word": "cash",
+          "shortcut": "cash"
+        },
+        {
+          "word": "chase",
+          "shortcut": "chas;"
+        }
+      ]
+    },
+    {
+      "anagram": "acls",
+      "count": 2,
+      "entries": [
+        {
+          "word": "class",
+          "shortcut": "clas"
+        },
+        {
+          "word": "scale",
+          "shortcut": "scal;"
+        }
+      ]
+    },
+    {
+      "anagram": "acrt",
+      "count": 2,
+      "entries": [
+        {
+          "word": "actor",
+          "shortcut": "actr"
+        },
+        {
+          "word": "trace",
+          "shortcut": "trac;"
+        }
+      ]
+    },
+    {
+      "anagram": "acsu",
+      "count": 2,
+      "entries": [
+        {
+          "word": "cause",
+          "shortcut": "caus"
+        },
+        {
+          "word": "sauce",
+          "shortcut": "sauc;"
+        }
+      ]
+    },
+    {
+      "anagram": "act",
+      "count": 2,
+      "entries": [
+        {
+          "word": "act",
+          "shortcut": "act"
+        },
+        {
+          "word": "cat",
+          "shortcut": "cat;"
+        }
+      ]
+    },
+    {
+      "anagram": "ad",
+      "count": 2,
+      "entries": [
+        {
+          "word": "add",
+          "shortcut": "ad"
+        },
+        {
+          "word": "dad",
+          "shortcut": "da;"
+        }
+      ]
+    },
+    {
+      "anagram": "adel",
+      "count": 2,
+      "entries": [
+        {
+          "word": "deal",
+          "shortcut": "deal"
+        },
+        {
+          "word": "lead",
+          "shortcut": "lead;"
+        }
+      ]
+    },
+    {
+      "anagram": "adgr",
+      "count": 2,
+      "entries": [
+        {
+          "word": "drag",
+          "shortcut": "drag"
+        },
+        {
+          "word": "grade",
+          "shortcut": "grad;"
+        }
+      ]
+    },
+    {
+      "anagram": "adir",
+      "count": 2,
+      "entries": [
+        {
+          "word": "dare",
+          "shortcut": "dari"
+        },
+        {
+          "word": "radio",
+          "shortcut": "radi;"
+        }
+      ]
+    },
+    {
+      "anagram": "adly",
+      "count": 2,
+      "entries": [
+        {
+          "word": "daily",
+          "shortcut": "daly"
+        },
+        {
+          "word": "lady",
+          "shortcut": "lady;"
+        }
+      ]
+    },
+    {
+      "anagram": "admr",
+      "count": 3,
+      "entries": [
+        {
+          "word": "armed",
+          "shortcut": "armd"
+        },
+        {
+          "word": "dream",
+          "shortcut": "dram'"
+        },
+        {
+          "word": "drama",
+          "shortcut": "drma;"
+        }
+      ]
+    },
+    {
+      "anagram": "adn",
+      "count": 2,
+      "entries": [
+        {
+          "word": "and",
+          "shortcut": "and"
+        },
+        {
+          "word": "DNA",
+          "shortcut": "DNA;"
+        }
+      ]
+    },
+    {
+      "anagram": "adpt",
+      "count": 2,
+      "entries": [
+        {
+          "word": "adapt",
+          "shortcut": "adpt"
+        },
+        {
+          "word": "adopt",
+          "shortcut": "adpt;"
+        }
+      ]
+    },
+    {
+      "anagram": "adrw",
+      "count": 2,
+      "entries": [
+        {
+          "word": "award",
+          "shortcut": "awrd"
+        },
+        {
+          "word": "draw",
+          "shortcut": "draw;"
+        }
+      ]
+    },
+    {
+      "anagram": "aegr",
+      "count": 3,
+      "entries": [
+        {
+          "word": "agree",
+          "shortcut": "agre"
+        },
+        {
+          "word": "eager",
+          "shortcut": "eagr;"
+        },
+        {
+          "word": "gear",
+          "shortcut": "gear'"
+        }
+      ]
+    },
+    {
+      "anagram": "aeht",
+      "count": 2,
+      "entries": [
+        {
+          "word": "hate",
+          "shortcut": "hate"
+        },
+        {
+          "word": "heat",
+          "shortcut": "heat;"
+        }
+      ]
+    },
+    {
+      "anagram": "aekw",
+      "count": 2,
+      "entries": [
+        {
+          "word": "wake",
+          "shortcut": "wake"
+        },
+        {
+          "word": "weak",
+          "shortcut": "weak;"
+        }
+      ]
+    },
+    {
+      "anagram": "aelm",
+      "count": 2,
+      "entries": [
+        {
+          "word": "male",
+          "shortcut": "male"
+        },
+        {
+          "word": "meal",
+          "shortcut": "meal;"
+        }
+      ]
+    },
+    {
+      "anagram": "aelp",
+      "count": 2,
+      "entries": [
+        {
+          "word": "apple",
+          "shortcut": "aple"
+        },
+        {
+          "word": "pale",
+          "shortcut": "pale;"
+        }
+      ]
+    },
+    {
+      "anagram": "aelr",
+      "count": 2,
+      "entries": [
+        {
+          "word": "early",
+          "shortcut": "earl"
+        },
+        {
+          "word": "real",
+          "shortcut": "real;"
+        }
+      ]
+    },
+    {
+      "anagram": "aelt",
+      "count": 2,
+      "entries": [
+        {
+          "word": "late",
+          "shortcut": "late"
+        },
+        {
+          "word": "tale",
+          "shortcut": "tale;"
+        }
+      ]
+    },
+    {
+      "anagram": "aemn",
+      "count": 2,
+      "entries": [
+        {
+          "word": "mean",
+          "shortcut": "mean"
+        },
+        {
+          "word": "name",
+          "shortcut": "name;"
+        }
+      ]
+    },
+    {
+      "anagram": "aemt",
+      "count": 3,
+      "entries": [
+        {
+          "word": "mate",
+          "shortcut": "mate"
+        },
+        {
+          "word": "meat",
+          "shortcut": "meat;"
+        },
+        {
+          "word": "team",
+          "shortcut": "team'"
+        }
+      ]
+    },
+    {
+      "anagram": "aenr",
+      "count": 2,
+      "entries": [
+        {
+          "word": "earn",
+          "shortcut": "earn"
+        },
+        {
+          "word": "near",
+          "shortcut": "near;"
+        }
+      ]
+    },
+    {
+      "anagram": "aer",
+      "count": 5,
+      "entries": [
+        {
+          "word": "are",
+          "shortcut": "are"
+        },
+        {
+          "word": "area",
+          "shortcut": "are;"
+        },
+        {
+          "word": "ear",
+          "shortcut": "ear'"
+        },
+        {
+          "word": "era",
+          "shortcut": "era["
+        },
+        {
+          "word": "rare",
+          "shortcut": "rae/"
+        }
+      ]
+    },
+    {
+      "anagram": "aert",
+      "count": 2,
+      "entries": [
+        {
+          "word": "rate",
+          "shortcut": "rate"
+        },
+        {
+          "word": "tear",
+          "shortcut": "tear;"
+        }
+      ]
+    },
+    {
+      "anagram": "aery",
+      "count": 2,
+      "entries": [
+        {
+          "word": "read",
+          "shortcut": "reay"
+        },
+        {
+          "word": "year",
+          "shortcut": "year;"
+        }
+      ]
+    },
+    {
+      "anagram": "aes",
+      "count": 2,
+      "entries": [
+        {
+          "word": "ease",
+          "shortcut": "eas"
+        },
+        {
+          "word": "sea",
+          "shortcut": "sea;"
+        }
+      ]
+    },
+    {
+      "anagram": "aest",
+      "count": 3,
+      "entries": [
+        {
+          "word": "asset",
+          "shortcut": "aset"
+        },
+        {
+          "word": "east",
+          "shortcut": "east;"
+        },
+        {
+          "word": "seat",
+          "shortcut": "seat'"
+        }
+      ]
+    },
+    {
+      "anagram": "aesy",
+      "count": 2,
+      "entries": [
+        {
+          "word": "easy",
+          "shortcut": "easy"
+        },
+        {
+          "word": "essay",
+          "shortcut": "esay;"
+        }
+      ]
+    },
+    {
+      "anagram": "aet",
+      "count": 2,
+      "entries": [
+        {
+          "word": "eat",
+          "shortcut": "eat"
+        },
+        {
+          "word": "tea",
+          "shortcut": "tea;"
+        }
+      ]
+    },
+    {
+      "anagram": "aflt",
+      "count": 3,
+      "entries": [
+        {
+          "word": "fault",
+          "shortcut": "falt"
+        },
+        {
+          "word": "float",
+          "shortcut": "flat'"
+        },
+        {
+          "word": "flat",
+          "shortcut": "flat;"
+        }
+      ]
+    },
+    {
+      "anagram": "afmr",
+      "count": 2,
+      "entries": [
+        {
+          "word": "farm",
+          "shortcut": "farm"
+        },
+        {
+          "word": "frame",
+          "shortcut": "fram;"
+        }
+      ]
+    },
+    {
+      "anagram": "afst",
+      "count": 2,
+      "entries": [
+        {
+          "word": "fast",
+          "shortcut": "fast"
+        },
+        {
+          "word": "staff",
+          "shortcut": "staf;"
+        }
+      ]
+    },
+    {
+      "anagram": "agin",
+      "count": 2,
+      "entries": [
+        {
+          "word": "again",
+          "shortcut": "agin"
+        },
+        {
+          "word": "gain",
+          "shortcut": "gain;"
+        }
+      ]
+    },
+    {
+      "anagram": "agln",
+      "count": 2,
+      "entries": [
+        {
+          "word": "along",
+          "shortcut": "alng"
+        },
+        {
+          "word": "angle",
+          "shortcut": "angl;"
+        }
+      ]
+    },
+    {
+      "anagram": "agnr",
+      "count": 3,
+      "entries": [
+        {
+          "word": "anger",
+          "shortcut": "angr"
+        },
+        {
+          "word": "angry",
+          "shortcut": "angr;"
+        },
+        {
+          "word": "range",
+          "shortcut": "rang'"
+        }
+      ]
+    },
+    {
+      "anagram": "ahps",
+      "count": 2,
+      "entries": [
+        {
+          "word": "phase",
+          "shortcut": "phas"
+        },
+        {
+          "word": "shape",
+          "shortcut": "shap;"
+        }
+      ]
+    },
+    {
+      "anagram": "aht",
+      "count": 2,
+      "entries": [
+        {
+          "word": "that",
+          "shortcut": "tha"
+        },
+        {
+          "word": "hat",
+          "shortcut": "hat;"
+        }
+      ]
+    },
+    {
+      "anagram": "airs",
+      "count": 2,
+      "entries": [
+        {
+          "word": "arise",
+          "shortcut": "aris"
+        },
+        {
+          "word": "raise",
+          "shortcut": "rais;"
+        }
+      ]
+    },
+    {
+      "anagram": "akmr",
+      "count": 2,
+      "entries": [
+        {
+          "word": "maker",
+          "shortcut": "makr"
+        },
+        {
+          "word": "mark",
+          "shortcut": "mark;"
+        }
+      ]
+    },
+    {
+      "anagram": "akst",
+      "count": 2,
+      "entries": [
+        {
+          "word": "stake",
+          "shortcut": "stak"
+        },
+        {
+          "word": "task",
+          "shortcut": "task;"
+        }
+      ]
+    },
+    {
+      "anagram": "alno",
+      "count": 2,
+      "entries": [
+        {
+          "word": "alone",
+          "shortcut": "alon"
+        },
+        {
+          "word": "loan",
+          "shortcut": "loan;"
+        }
+      ]
+    },
+    {
+      "anagram": "alnp",
+      "count": 3,
+      "entries": [
+        {
+          "word": "panel",
+          "shortcut": "panl"
+        },
+        {
+          "word": "plane",
+          "shortcut": "plan'"
+        },
+        {
+          "word": "plan",
+          "shortcut": "plan;"
+        }
+      ]
+    },
+    {
+      "anagram": "alpy",
+      "count": 2,
+      "entries": [
+        {
+          "word": "apply",
+          "shortcut": "aply"
+        },
+        {
+          "word": "play",
+          "shortcut": "play;"
+        }
+      ]
+    },
+    {
+      "anagram": "alrt",
+      "count": 3,
+      "entries": [
+        {
+          "word": "alter",
+          "shortcut": "altr"
+        },
+        {
+          "word": "later",
+          "shortcut": "latr;"
+        },
+        {
+          "word": "trial",
+          "shortcut": "tral'"
+        }
+      ]
+    },
+    {
+      "anagram": "alst",
+      "count": 3,
+      "entries": [
+        {
+          "word": "last",
+          "shortcut": "last"
+        },
+        {
+          "word": "salt",
+          "shortcut": "salt;"
+        },
+        {
+          "word": "steal",
+          "shortcut": "stal'"
+        }
+      ]
+    },
+    {
+      "anagram": "alw",
+      "count": 2,
+      "entries": [
+        {
+          "word": "law",
+          "shortcut": "law"
+        },
+        {
+          "word": "wall",
+          "shortcut": "wal;"
+        }
+      ]
+    },
+    {
+      "anagram": "aly",
+      "count": 2,
+      "entries": [
+        {
+          "word": "ally",
+          "shortcut": "aly"
+        },
+        {
+          "word": "lay",
+          "shortcut": "lay;"
+        }
+      ]
+    },
+    {
+      "anagram": "amry",
+      "count": 3,
+      "entries": [
+        {
+          "word": "army",
+          "shortcut": "army"
+        },
+        {
+          "word": "marry",
+          "shortcut": "mary;"
+        },
+        {
+          "word": "mayor",
+          "shortcut": "mayr'"
+        }
+      ]
+    },
+    {
+      "anagram": "anpt",
+      "count": 2,
+      "entries": [
+        {
+          "word": "paint",
+          "shortcut": "pant"
+        },
+        {
+          "word": "pant",
+          "shortcut": "pant;"
+        }
+      ]
+    },
+    {
+      "anagram": "aprt",
+      "count": 3,
+      "entries": [
+        {
+          "word": "apart",
+          "shortcut": "aprt"
+        },
+        {
+          "word": "party",
+          "shortcut": "part'"
+        },
+        {
+          "word": "part",
+          "shortcut": "part;"
+        }
+      ]
+    },
+    {
+      "anagram": "arst",
+      "count": 2,
+      "entries": [
+        {
+          "word": "star",
+          "shortcut": "star"
+        },
+        {
+          "word": "stare",
+          "shortcut": "star;"
+        }
+      ]
+    },
+    {
+      "anagram": "art",
+      "count": 2,
+      "entries": [
+        {
+          "word": "art",
+          "shortcut": "art"
+        },
+        {
+          "word": "treat",
+          "shortcut": "tra;"
+        }
+      ]
+    },
+    {
+      "anagram": "arw",
+      "count": 3,
+      "entries": [
+        {
+          "word": "aware",
+          "shortcut": "awr"
+        },
+        {
+          "word": "raw",
+          "shortcut": "raw;"
+        },
+        {
+          "word": "war",
+          "shortcut": "war'"
+        }
+      ]
+    },
+    {
+      "anagram": "ast",
+      "count": 2,
+      "entries": [
+        {
+          "word": "state",
+          "shortcut": "sta"
+        },
+        {
+          "word": "taste",
+          "shortcut": "tas;"
+        }
+      ]
+    },
+    {
+      "anagram": "awy",
+      "count": 2,
+      "entries": [
+        {
+          "word": "away",
+          "shortcut": "awy"
+        },
+        {
+          "word": "way",
+          "shortcut": "way;"
+        }
+      ]
+    },
+    {
+      "anagram": "begn",
+      "count": 2,
+      "entries": [
+        {
+          "word": "begin",
+          "shortcut": "begn"
+        },
+        {
+          "word": "being",
+          "shortcut": "beng;"
+        }
+      ]
+    },
+    {
+      "anagram": "bil",
+      "count": 2,
+      "entries": [
+        {
+          "word": "bible",
+          "shortcut": "bil"
+        },
+        {
+          "word": "bill",
+          "shortcut": "bil;"
+        }
+      ]
+    },
+    {
+      "anagram": "blow",
+      "count": 2,
+      "entries": [
+        {
+          "word": "blow",
+          "shortcut": "blow"
+        },
+        {
+          "word": "bowl",
+          "shortcut": "bowl;"
+        }
+      ]
+    },
+    {
+      "anagram": "bmo",
+      "count": 2,
+      "entries": [
+        {
+          "word": "bomb",
+          "shortcut": "bom"
+        },
+        {
+          "word": "boom",
+          "shortcut": "bom;"
+        }
+      ]
+    },
+    {
+      "anagram": "bnru",
+      "count": 2,
+      "entries": [
+        {
+          "word": "burn",
+          "shortcut": "burn"
+        },
+        {
+          "word": "urban",
+          "shortcut": "urbn;"
+        }
+      ]
+    },
+    {
+      "anagram": "bruy",
+      "count": 2,
+      "entries": [
+        {
+          "word": "bury",
+          "shortcut": "bury"
+        },
+        {
+          "word": "buyer",
+          "shortcut": "buyr;"
+        }
+      ]
+    },
+    {
+      "anagram": "cdlo",
+      "count": 2,
+      "entries": [
+        {
+          "word": "cold",
+          "shortcut": "cold"
+        },
+        {
+          "word": "could",
+          "shortcut": "cold;"
+        }
+      ]
+    },
+    {
+      "anagram": "cefh",
+      "count": 2,
+      "entries": [
+        {
+          "word": "chef",
+          "shortcut": "chef"
+        },
+        {
+          "word": "chief",
+          "shortcut": "chef;"
+        }
+      ]
+    },
+    {
+      "anagram": "chir",
+      "count": 2,
+      "entries": [
+        {
+          "word": "chair",
+          "shortcut": "chir"
+        },
+        {
+          "word": "rich",
+          "shortcut": "rich;"
+        }
+      ]
+    },
+    {
+      "anagram": "cklu",
+      "count": 2,
+      "entries": [
+        {
+          "word": "luck",
+          "shortcut": "luck"
+        },
+        {
+          "word": "lucky",
+          "shortcut": "luck;"
+        }
+      ]
+    },
+    {
+      "anagram": "clo",
+      "count": 2,
+      "entries": [
+        {
+          "word": "cool",
+          "shortcut": "col"
+        },
+        {
+          "word": "local",
+          "shortcut": "loc;"
+        }
+      ]
+    },
+    {
+      "anagram": "cors",
+      "count": 2,
+      "entries": [
+        {
+          "word": "cross",
+          "shortcut": "cros"
+        },
+        {
+          "word": "score",
+          "shortcut": "scor;"
+        }
+      ]
+    },
+    {
+      "anagram": "cost",
+      "count": 2,
+      "entries": [
+        {
+          "word": "coast",
+          "shortcut": "cost"
+        },
+        {
+          "word": "cost",
+          "shortcut": "cost;"
+        }
+      ]
+    },
+    {
+      "anagram": "den",
+      "count": 2,
+      "entries": [
+        {
+          "word": "end",
+          "shortcut": "end"
+        },
+        {
+          "word": "need",
+          "shortcut": "ned;"
+        }
+      ]
+    },
+    {
+      "anagram": "der",
+      "count": 2,
+      "entries": [
+        {
+          "word": "deer",
+          "shortcut": "der"
+        },
+        {
+          "word": "red",
+          "shortcut": "red;"
+        }
+      ]
+    },
+    {
+      "anagram": "dgo",
+      "count": 3,
+      "entries": [
+        {
+          "word": "dog",
+          "shortcut": "dog"
+        },
+        {
+          "word": "good",
+          "shortcut": "god'"
+        },
+        {
+          "word": "God",
+          "shortcut": "God;"
+        }
+      ]
+    },
+    {
+      "anagram": "dgru",
+      "count": 2,
+      "entries": [
+        {
+          "word": "drug",
+          "shortcut": "drug"
+        },
+        {
+          "word": "guard",
+          "shortcut": "gurd;"
+        }
+      ]
+    },
+    {
+      "anagram": "dirt",
+      "count": 3,
+      "entries": [
+        {
+          "word": "dirt",
+          "shortcut": "dirt"
+        },
+        {
+          "word": "dirty",
+          "shortcut": "dirt;"
+        },
+        {
+          "word": "tired",
+          "shortcut": "tird'"
+        }
+      ]
+    },
+    {
+      "anagram": "dnow",
+      "count": 2,
+      "entries": [
+        {
+          "word": "down",
+          "shortcut": "down"
+        },
+        {
+          "word": "wound",
+          "shortcut": "wond;"
+        }
+      ]
+    },
+    {
+      "anagram": "dor",
+      "count": 2,
+      "entries": [
+        {
+          "word": "door",
+          "shortcut": "dor"
+        },
+        {
+          "word": "order",
+          "shortcut": "ord;"
+        }
+      ]
+    },
+    {
+      "anagram": "efil",
+      "count": 2,
+      "entries": [
+        {
+          "word": "file",
+          "shortcut": "file"
+        },
+        {
+          "word": "life",
+          "shortcut": "life;"
+        }
+      ]
+    },
+    {
+      "anagram": "efl",
+      "count": 2,
+      "entries": [
+        {
+          "word": "feel",
+          "shortcut": "fel"
+        },
+        {
+          "word": "flee",
+          "shortcut": "fle;"
+        }
+      ]
+    },
+    {
+      "anagram": "efr",
+      "count": 2,
+      "entries": [
+        {
+          "word": "free",
+          "shortcut": "fre"
+        },
+        {
+          "word": "refer",
+          "shortcut": "ref;"
+        }
+      ]
+    },
+    {
+      "anagram": "egl",
+      "count": 2,
+      "entries": [
+        {
+          "word": "leg",
+          "shortcut": "leg"
+        },
+        {
+          "word": "legal",
+          "shortcut": "leg;"
+        }
+      ]
+    },
+    {
+      "anagram": "ehl",
+      "count": 2,
+      "entries": [
+        {
+          "word": "heel",
+          "shortcut": "hel"
+        },
+        {
+          "word": "hell",
+          "shortcut": "hel;"
+        }
+      ]
+    },
+    {
+      "anagram": "ehlo",
+      "count": 2,
+      "entries": [
+        {
+          "word": "hello",
+          "shortcut": "helo"
+        },
+        {
+          "word": "hole",
+          "shortcut": "hole;"
+        }
+      ]
+    },
+    {
+      "anagram": "ehmt",
+      "count": 2,
+      "entries": [
+        {
+          "word": "them",
+          "shortcut": "them"
+        },
+        {
+          "word": "theme",
+          "shortcut": "them;"
+        }
+      ]
+    },
+    {
+      "anagram": "ehr",
+      "count": 2,
+      "entries": [
+        {
+          "word": "her",
+          "shortcut": "her"
+        },
+        {
+          "word": "here",
+          "shortcut": "her;"
+        }
+      ]
+    },
+    {
+      "anagram": "ehrt",
+      "count": 3,
+      "entries": [
+        {
+          "word": "there",
+          "shortcut": "ther"
+        },
+        {
+          "word": "heart",
+          "shortcut": "hert;"
+        },
+        {
+          "word": "three",
+          "shortcut": "thre'"
+        }
+      ]
+    },
+    {
+      "anagram": "ehst",
+      "count": 2,
+      "entries": [
+        {
+          "word": "these",
+          "shortcut": "thes"
+        },
+        {
+          "word": "sheet",
+          "shortcut": "shet;"
+        }
+      ]
+    },
+    {
+      "anagram": "eimt",
+      "count": 2,
+      "entries": [
+        {
+          "word": "item",
+          "shortcut": "item"
+        },
+        {
+          "word": "time",
+          "shortcut": "time;"
+        }
+      ]
+    },
+    {
+      "anagram": "eip",
+      "count": 2,
+      "entries": [
+        {
+          "word": "pie",
+          "shortcut": "pie"
+        },
+        {
+          "word": "pipe",
+          "shortcut": "pie;"
+        }
+      ]
+    },
+    {
+      "anagram": "eisz",
+      "count": 2,
+      "entries": [
+        {
+          "word": "seize",
+          "shortcut": "seiz"
+        },
+        {
+          "word": "size",
+          "shortcut": "size;"
+        }
+      ]
+    },
+    {
+      "anagram": "els",
+      "count": 3,
+      "entries": [
+        {
+          "word": "else",
+          "shortcut": "els"
+        },
+        {
+          "word": "less",
+          "shortcut": "les;"
+        },
+        {
+          "word": "sell",
+          "shortcut": "sel'"
+        }
+      ]
+    },
+    {
+      "anagram": "elst",
+      "count": 2,
+      "entries": [
+        {
+          "word": "least",
+          "shortcut": "lest"
+        },
+        {
+          "word": "steel",
+          "shortcut": "stel;"
+        }
+      ]
+    },
+    {
+      "anagram": "elt",
+      "count": 2,
+      "entries": [
+        {
+          "word": "let",
+          "shortcut": "let"
+        },
+        {
+          "word": "tell",
+          "shortcut": "tel;"
+        }
+      ]
+    },
+    {
+      "anagram": "emrt",
+      "count": 2,
+      "entries": [
+        {
+          "word": "meter",
+          "shortcut": "metr"
+        },
+        {
+          "word": "term",
+          "shortcut": "term;"
+        }
+      ]
+    },
+    {
+      "anagram": "ems",
+      "count": 2,
+      "entries": [
+        {
+          "word": "mess",
+          "shortcut": "mes"
+        },
+        {
+          "word": "seem",
+          "shortcut": "sem;"
+        }
+      ]
+    },
+    {
+      "anagram": "eno",
+      "count": 2,
+      "entries": [
+        {
+          "word": "none",
+          "shortcut": "noe"
+        },
+        {
+          "word": "one",
+          "shortcut": "one;"
+        }
+      ]
+    },
+    {
+      "anagram": "enot",
+      "count": 2,
+      "entries": [
+        {
+          "word": "note",
+          "shortcut": "note"
+        },
+        {
+          "word": "tone",
+          "shortcut": "tone;"
+        }
+      ]
+    },
+    {
+      "anagram": "enrt",
+      "count": 2,
+      "entries": [
+        {
+          "word": "enter",
+          "shortcut": "entr"
+        },
+        {
+          "word": "entry",
+          "shortcut": "entr;"
+        }
+      ]
+    },
+    {
+      "anagram": "enrv",
+      "count": 2,
+      "entries": [
+        {
+          "word": "nerve",
+          "shortcut": "nerv"
+        },
+        {
+          "word": "never",
+          "shortcut": "nevr;"
+        }
+      ]
+    },
+    {
+      "anagram": "ent",
+      "count": 4,
+      "entries": [
+        {
+          "word": "net",
+          "shortcut": "net"
+        },
+        {
+          "word": "ten",
+          "shortcut": "ten'"
+        },
+        {
+          "word": "teen",
+          "shortcut": "ten;"
+        },
+        {
+          "word": "tent",
+          "shortcut": "ten["
+        }
+      ]
+    },
+    {
+      "anagram": "epr",
+      "count": 2,
+      "entries": [
+        {
+          "word": "peer",
+          "shortcut": "per"
+        },
+        {
+          "word": "per",
+          "shortcut": "per;"
+        }
+      ]
+    },
+    {
+      "anagram": "epru",
+      "count": 2,
+      "entries": [
+        {
+          "word": "pure",
+          "shortcut": "pure"
+        },
+        {
+          "word": "upper",
+          "shortcut": "uper;"
+        }
+      ]
+    },
+    {
+      "anagram": "ersu",
+      "count": 2,
+      "entries": [
+        {
+          "word": "sure",
+          "shortcut": "sure"
+        },
+        {
+          "word": "user",
+          "shortcut": "user;"
+        }
+      ]
+    },
+    {
+      "anagram": "ervy",
+      "count": 2,
+      "entries": [
+        {
+          "word": "every",
+          "shortcut": "evry"
+        },
+        {
+          "word": "very",
+          "shortcut": "very;"
+        }
+      ]
+    },
+    {
+      "anagram": "est",
+      "count": 2,
+      "entries": [
+        {
+          "word": "set",
+          "shortcut": "set"
+        },
+        {
+          "word": "test",
+          "shortcut": "tes;"
+        }
+      ]
+    },
+    {
+      "anagram": "estw",
+      "count": 2,
+      "entries": [
+        {
+          "word": "sweet",
+          "shortcut": "swet"
+        },
+        {
+          "word": "west",
+          "shortcut": "west;"
+        }
+      ]
+    },
+    {
+      "anagram": "esu",
+      "count": 2,
+      "entries": [
+        {
+          "word": "sue",
+          "shortcut": "sue"
+        },
+        {
+          "word": "use",
+          "shortcut": "use;"
+        }
+      ]
+    },
+    {
+      "anagram": "fgit",
+      "count": 2,
+      "entries": [
+        {
+          "word": "fight",
+          "shortcut": "figt"
+        },
+        {
+          "word": "gift",
+          "shortcut": "gift;"
+        }
+      ]
+    },
+    {
+      "anagram": "fhls",
+      "count": 2,
+      "entries": [
+        {
+          "word": "flesh",
+          "shortcut": "flsh"
+        },
+        {
+          "word": "shelf",
+          "shortcut": "shlf;"
+        }
+      ]
+    },
+    {
+      "anagram": "fit",
+      "count": 3,
+      "entries": [
+        {
+          "word": "fifth",
+          "shortcut": "fit"
+        },
+        {
+          "word": "fit",
+          "shortcut": "fit'"
+        },
+        {
+          "word": "fifty",
+          "shortcut": "fit;"
+        }
+      ]
+    },
+    {
+      "anagram": "fmor",
+      "count": 2,
+      "entries": [
+        {
+          "word": "form",
+          "shortcut": "form"
+        },
+        {
+          "word": "from",
+          "shortcut": "from;"
+        }
+      ]
+    },
+    {
+      "anagram": "for",
+      "count": 2,
+      "entries": [
+        {
+          "word": "for",
+          "shortcut": "for"
+        },
+        {
+          "word": "roof",
+          "shortcut": "rof;"
+        }
+      ]
+    },
+    {
+      "anagram": "ginr",
+      "count": 2,
+      "entries": [
+        {
+          "word": "grain",
+          "shortcut": "grin"
+        },
+        {
+          "word": "ring",
+          "shortcut": "ring;"
+        }
+      ]
+    },
+    {
+      "anagram": "gins",
+      "count": 2,
+      "entries": [
+        {
+          "word": "sign",
+          "shortcut": "sign"
+        },
+        {
+          "word": "sing",
+          "shortcut": "sing;"
+        }
+      ]
+    },
+    {
+      "anagram": "hist",
+      "count": 2,
+      "entries": [
+        {
+          "word": "shit",
+          "shortcut": "shit"
+        },
+        {
+          "word": "this",
+          "shortcut": "this;"
+        }
+      ]
+    },
+    {
+      "anagram": "hitw",
+      "count": 2,
+      "entries": [
+        {
+          "word": "white",
+          "shortcut": "whit"
+        },
+        {
+          "word": "with",
+          "shortcut": "with;"
+        }
+      ]
+    },
+    {
+      "anagram": "hknt",
+      "count": 2,
+      "entries": [
+        {
+          "word": "thank",
+          "shortcut": "thnk"
+        },
+        {
+          "word": "think",
+          "shortcut": "thnk;"
+        }
+      ]
+    },
+    {
+      "anagram": "hors",
+      "count": 2,
+      "entries": [
+        {
+          "word": "horse",
+          "shortcut": "hors"
+        },
+        {
+          "word": "shore",
+          "shortcut": "shor;"
+        }
+      ]
+    },
+    {
+      "anagram": "host",
+      "count": 5,
+      "entries": [
+        {
+          "word": "those",
+          "shortcut": "thos"
+        },
+        {
+          "word": "host",
+          "shortcut": "host;"
+        },
+        {
+          "word": "shoot",
+          "shortcut": "shot'"
+        },
+        {
+          "word": "shot",
+          "shortcut": "shot/"
+        },
+        {
+          "word": "south",
+          "shortcut": "soth["
+        }
+      ]
+    },
+    {
+      "anagram": "hosw",
+      "count": 2,
+      "entries": [
+        {
+          "word": "show",
+          "shortcut": "show"
+        },
+        {
+          "word": "whose",
+          "shortcut": "whos;"
+        }
+      ]
+    },
+    {
+      "anagram": "hot",
+      "count": 2,
+      "entries": [
+        {
+          "word": "hot",
+          "shortcut": "hot"
+        },
+        {
+          "word": "tooth",
+          "shortcut": "toh;"
+        }
+      ]
+    },
+    {
+      "anagram": "how",
+      "count": 2,
+      "entries": [
+        {
+          "word": "how",
+          "shortcut": "how"
+        },
+        {
+          "word": "who",
+          "shortcut": "who;"
+        }
+      ]
+    },
+    {
+      "anagram": "hrst",
+      "count": 2,
+      "entries": [
+        {
+          "word": "shirt",
+          "shortcut": "shrt"
+        },
+        {
+          "word": "short",
+          "shortcut": "shrt;"
+        }
+      ]
+    },
+    {
+      "anagram": "hstu",
+      "count": 3,
+      "entries": [
+        {
+          "word": "thus",
+          "shortcut": "thus"
+        },
+        {
+          "word": "shout",
+          "shortcut": "shut'"
+        },
+        {
+          "word": "shut",
+          "shortcut": "shut;"
+        }
+      ]
+    },
+    {
+      "anagram": "ikns",
+      "count": 2,
+      "entries": [
+        {
+          "word": "sink",
+          "shortcut": "sink"
+        },
+        {
+          "word": "skin",
+          "shortcut": "skin;"
+        }
+      ]
+    },
+    {
+      "anagram": "iks",
+      "count": 2,
+      "entries": [
+        {
+          "word": "kiss",
+          "shortcut": "kis"
+        },
+        {
+          "word": "ski",
+          "shortcut": "ski;"
+        }
+      ]
+    },
+    {
+      "anagram": "ilst",
+      "count": 2,
+      "entries": [
+        {
+          "word": "list",
+          "shortcut": "list"
+        },
+        {
+          "word": "still",
+          "shortcut": "stil;"
+        }
+      ]
+    },
+    {
+      "anagram": "iqtu",
+      "count": 2,
+      "entries": [
+        {
+          "word": "quit",
+          "shortcut": "quit"
+        },
+        {
+          "word": "quite",
+          "shortcut": "quit;"
+        }
+      ]
+    },
+    {
+      "anagram": "irst",
+      "count": 2,
+      "entries": [
+        {
+          "word": "stair",
+          "shortcut": "stir"
+        },
+        {
+          "word": "stir",
+          "shortcut": "stir;"
+        }
+      ]
+    },
+    {
+      "anagram": "ist",
+      "count": 2,
+      "entries": [
+        {
+          "word": "its",
+          "shortcut": "its"
+        },
+        {
+          "word": "sit",
+          "shortcut": "sit;"
+        }
+      ]
+    },
+    {
+      "anagram": "korw",
+      "count": 2,
+      "entries": [
+        {
+          "word": "work",
+          "shortcut": "work"
+        },
+        {
+          "word": "works",
+          "shortcut": "work;"
+        }
+      ]
+    },
+    {
+      "anagram": "lop",
+      "count": 2,
+      "entries": [
+        {
+          "word": "poll",
+          "shortcut": "pol"
+        },
+        {
+          "word": "pool",
+          "shortcut": "pol;"
+        }
+      ]
+    },
+    {
+      "anagram": "los",
+      "count": 2,
+      "entries": [
+        {
+          "word": "loose",
+          "shortcut": "los"
+        },
+        {
+          "word": "loss",
+          "shortcut": "los;"
+        }
+      ]
+    },
+    {
+      "anagram": "lost",
+      "count": 2,
+      "entries": [
+        {
+          "word": "lost",
+          "shortcut": "lost"
+        },
+        {
+          "word": "lots",
+          "shortcut": "lots;"
+        }
+      ]
+    },
+    {
+      "anagram": "lot",
+      "count": 3,
+      "entries": [
+        {
+          "word": "lot",
+          "shortcut": "lot"
+        },
+        {
+          "word": "total",
+          "shortcut": "tol'"
+        },
+        {
+          "word": "tool",
+          "shortcut": "tol;"
+        }
+      ]
+    },
+    {
+      "anagram": "mnot",
+      "count": 2,
+      "entries": [
+        {
+          "word": "month",
+          "shortcut": "mont"
+        },
+        {
+          "word": "mount",
+          "shortcut": "mont;"
+        }
+      ]
+    },
+    {
+      "anagram": "mrst",
+      "count": 2,
+      "entries": [
+        {
+          "word": "smart",
+          "shortcut": "smrt"
+        },
+        {
+          "word": "storm",
+          "shortcut": "strm;"
+        }
+      ]
+    },
+    {
+      "anagram": "nos",
+      "count": 2,
+      "entries": [
+        {
+          "word": "son",
+          "shortcut": "son"
+        },
+        {
+          "word": "soon",
+          "shortcut": "son;"
+        }
+      ]
+    },
+    {
+      "anagram": "not",
+      "count": 2,
+      "entries": [
+        {
+          "word": "not",
+          "shortcut": "not"
+        },
+        {
+          "word": "onto",
+          "shortcut": "ont;"
+        }
+      ]
+    },
+    {
+      "anagram": "now",
+      "count": 3,
+      "entries": [
+        {
+          "word": "now",
+          "shortcut": "now"
+        },
+        {
+          "word": "own",
+          "shortcut": "own;"
+        },
+        {
+          "word": "won",
+          "shortcut": "won'"
+        }
+      ]
+    },
+    {
+      "anagram": "opr",
+      "count": 2,
+      "entries": [
+        {
+          "word": "poor",
+          "shortcut": "por"
+        },
+        {
+          "word": "prior",
+          "shortcut": "pro;"
+        }
+      ]
+    },
+    {
+      "anagram": "oprt",
+      "count": 2,
+      "entries": [
+        {
+          "word": "port",
+          "shortcut": "port"
+        },
+        {
+          "word": "troop",
+          "shortcut": "trop;"
+        }
+      ]
+    },
+    {
+      "anagram": "opst",
+      "count": 3,
+      "entries": [
+        {
+          "word": "post",
+          "shortcut": "post"
+        },
+        {
+          "word": "spot",
+          "shortcut": "spot;"
+        },
+        {
+          "word": "stop",
+          "shortcut": "stop'"
+        }
+      ]
+    },
+    {
+      "anagram": "opt",
+      "count": 2,
+      "entries": [
+        {
+          "word": "pot",
+          "shortcut": "pot"
+        },
+        {
+          "word": "top",
+          "shortcut": "top;"
+        }
+      ]
+    },
+    {
+      "anagram": "orst",
+      "count": 2,
+      "entries": [
+        {
+          "word": "sort",
+          "shortcut": "sort"
+        },
+        {
+          "word": "store",
+          "shortcut": "stor;"
+        }
+      ]
+    },
+    {
+      "anagram": "orsy",
+      "count": 2,
+      "entries": [
+        {
+          "word": "sorry",
+          "shortcut": "sory"
+        },
+        {
+          "word": "yours",
+          "shortcut": "yors;"
+        }
+      ]
+    },
+    {
+      "anagram": "ortu",
+      "count": 2,
+      "entries": [
+        {
+          "word": "route",
+          "shortcut": "rout"
+        },
+        {
+          "word": "tour",
+          "shortcut": "tour;"
+        }
+      ]
+    },
+    {
+      "anagram": "prst",
+      "count": 2,
+      "entries": [
+        {
+          "word": "sport",
+          "shortcut": "sprt"
+        },
+        {
+          "word": "strip",
+          "shortcut": "strp;"
+        }
+      ]
+    },
+    {
+      "anagram": "rst",
+      "count": 2,
+      "entries": [
+        {
+          "word": "start",
+          "shortcut": "str"
+        },
+        {
+          "word": "trust",
+          "shortcut": "trs;"
+        }
+      ]
+    }
+  ]
+}

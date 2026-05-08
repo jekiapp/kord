@@ -19,7 +19,7 @@ final class AppSettings: ObservableObject {
 
     private init() {
         let defaultPath = FileManager.default.homeDirectoryForCurrentUser
-            .appendingPathComponent(".config/kord/dictionary.yaml")
+            .appendingPathComponent(".config/kord/dictionary.json")
             .path
 
         defaults.register(defaults: [

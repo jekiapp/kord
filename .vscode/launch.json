@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:kord}",
+            "name": "Debug Kord",
+            "program": "${workspaceFolder:kord}/.build/debug/Kord",
+            "preLaunchTask": "swift: Build Debug Kord"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:kord}",
+            "name": "Release Kord",
+            "program": "${workspaceFolder:kord}/.build/release/Kord",
+            "preLaunchTask": "swift: Build Release Kord"
+        }
+    ]
+}

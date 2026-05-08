@@ -32,8 +32,8 @@ final class ChordDictionary {
         try loadFromString(content)
     }
 
-    func loadFromString(_ yamlString: String) throws {
-        guard let yaml = try Yams.load(yaml: yamlString) as? [String: Any] else {
+    func loadFromString(_ dictionaryContent: String) throws {
+        guard let yaml = try Yams.load(yaml: dictionaryContent) as? [String: Any] else {
             throw DictionaryError.invalidFormat
         }
 
@@ -47,11 +47,13 @@ final class ChordDictionary {
 
         var newEntries: [String: String] = [:]
         if let mappedWords = words as? [String: String] {
-            for (key, value) in mappedWords where key != "-" {
-                let normalized = String(key.sorted())
+            // JSON format maps expansion -> shortcut.
+            for (word, rawShortcut) in mappedWords {
+                guard rawShortcut != "-" else { continue }
+                let normalized = String(rawShortcut.sorted())
                 // Keep the first entry when signatures conflict.
                 if newEntries[normalized] == nil {
-                    newEntries[normalized] = value
+                    newEntries[normalized] = word
                 }
             }
         } else if let listedWords = words as? [[String: Any]] {
@@ -63,8 +65,7 @@ final class ChordDictionary {
                     throw DictionaryError.invalidFormat
                 }
                 guard rawShortcut != "-" else { continue }
-                let shortcut = rawShortcut == "*" ? word : rawShortcut
-                let normalized = String(shortcut.sorted())
+                let normalized = String(rawShortcut.sorted())
                 // Preserve higher-order dictionary entries (earlier in file).
                 if newEntries[normalized] == nil {
                     newEntries[normalized] = word
@@ -82,8 +83,8 @@ final class ChordDictionary {
 
         var errorDescription: String? {
             switch self {
-            case .invalidFormat: return "Dictionary YAML has invalid format"
-            case .missingWords: return "Dictionary YAML missing 'words' section"
+            case .invalidFormat: return "Dictionary file has invalid format"
+            case .missingWords: return "Dictionary file missing 'words' section"
             }
         }
     }
