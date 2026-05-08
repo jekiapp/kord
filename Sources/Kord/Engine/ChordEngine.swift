@@ -28,7 +28,6 @@ final class ChordEngine {
     private var dictionary: ChordDictionary
     private var windowTimer: DispatchWorkItem?
     private var chordableChars: Set<Character> = []
-    private var isAtWordBoundary = true
 
     init(dictionary: ChordDictionary) {
         self.dictionary = dictionary
@@ -77,12 +76,10 @@ final class ChordEngine {
 
         switch state {
         case .idle:
-            guard canStartChord(), let c = char, chordableChars.contains(c) else {
-                updateWordBoundary(with: char)
+            guard let c = char, chordableChars.contains(c) else {
                 return false
             }
             state = .collecting
-            isAtWordBoundary = false
             addKey(event)
             startWindow()
             return true
@@ -118,7 +115,7 @@ final class ChordEngine {
     private func commitGesture() {
         windowTimer = nil
 
-        guard heldKeys.count > 1, let expansion = dictionary.lookup(heldKeys) else {
+        guard heldKeys.count >= 3, let expansion = dictionary.lookup(heldKeys) else {
             cancelGesture()
             return
         }
@@ -127,15 +124,11 @@ final class ChordEngine {
         heldKeys.removeAll()
         bufferedKeys.removeAll()
         // Expansions are injected with trailing space by the coordinator.
-        isAtWordBoundary = true
         delegate?.chordEngine(self, didRecognizeChord: expansion)
     }
 
     private func cancelGesture() {
         let keys = bufferedKeys
-        if let lastChar = keys.last.flatMap(normalizedCharacter(from:)) {
-            updateWordBoundary(with: lastChar)
-        }
         reset()
         if !keys.isEmpty {
             delegate?.chordEngine(self, didFailWithKeys: keys)
@@ -144,17 +137,6 @@ final class ChordEngine {
 
     private func rebuildChordableChars() {
         chordableChars = dictionary.allChordCharacters()
-    }
-
-    private func canStartChord() -> Bool {
-        isCaretAtTextBoundary?() ?? isAtWordBoundary
-    }
-
-    private func updateWordBoundary(with char: Character?) {
-        guard let char else { return }
-        isAtWordBoundary = char.unicodeScalars.allSatisfy { scalar in
-            CharacterSet.whitespacesAndNewlines.contains(scalar)
-        }
     }
 
     private func normalizedCharacter(from event: KeyEvent) -> Character? {
