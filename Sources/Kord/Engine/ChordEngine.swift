@@ -3,6 +3,7 @@ import Foundation
 
 protocol ChordEngineDelegate: AnyObject {
     func chordEngine(_ engine: ChordEngine, didRecognizeChord expansion: String)
+    func chordEngineDidRequestDeleteWordBackward(_ engine: ChordEngine)
     func chordEngine(_ engine: ChordEngine, didFailWithKeys keys: [BufferedKey])
 }
 
@@ -76,7 +77,7 @@ final class ChordEngine {
 
         switch state {
         case .idle:
-            guard let c = char, chordableChars.contains(c) || c == " " else {
+            guard isValidGestureStarter(event: event, character: char) else {
                 return false
             }
             state = .collecting
@@ -115,6 +116,14 @@ final class ChordEngine {
     private func commitGesture() {
         windowTimer = nil
 
+        if isDeleteWordBackwardChord() {
+            state = .idle
+            heldKeys.removeAll()
+            bufferedKeys.removeAll()
+            delegate?.chordEngineDidRequestDeleteWordBackward(self)
+            return
+        }
+
         let lookupKeys = heldKeys.filter { !$0.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
         guard heldKeys.count >= 3, lookupKeys.count >= 2, let expansion = dictionary.lookup(lookupKeys) else {
             cancelGesture()
@@ -140,6 +149,24 @@ final class ChordEngine {
         chordableChars = dictionary.allChordCharacters()
     }
 
+    private func isDeleteWordBackwardChord() -> Bool {
+        let hasEqual = heldKeys.contains("=")
+        let hasBackspace = bufferedKeys.contains(where: { $0.keyCode == backspaceKeyCode })
+        return hasEqual && hasBackspace
+    }
+
+    private func isValidGestureStarter(event: KeyEvent, character: Character?) -> Bool {
+        if event.keyCode == backspaceKeyCode {
+            return true
+        }
+
+        guard let c = character else {
+            return false
+        }
+
+        return chordableChars.contains(c) || c == " " || c == "="
+    }
+
     private func normalizedCharacter(from event: KeyEvent) -> Character? {
         if let char = event.character?.lowercased().first {
             return char
@@ -162,5 +189,9 @@ final class ChordEngine {
 
     private var boundaryKeyCodes: Set<Int64> {
         [36, 48, 49, 76] // Return, Tab, Space, Keypad Enter
+    }
+
+    private var backspaceKeyCode: Int64 {
+        51
     }
 }

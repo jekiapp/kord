@@ -194,9 +194,14 @@ final class ChordEngineTests: XCTestCase {
 final class MockEngineDelegate: ChordEngineDelegate {
     var recognizedExpansion: String?
     var failedKeys: [BufferedKey]?
+    var didRequestDeleteWordBackward = false
 
     func chordEngine(_ engine: ChordEngine, didRecognizeChord expansion: String) {
         recognizedExpansion = expansion
+    }
+
+    func chordEngineDidRequestDeleteWordBackward(_ engine: ChordEngine) {
+        didRequestDeleteWordBackward = true
     }
 
     func chordEngine(_ engine: ChordEngine, didFailWithKeys keys: [BufferedKey]) {

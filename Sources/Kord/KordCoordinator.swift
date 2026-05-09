@@ -110,6 +110,10 @@ final class KordCoordinator: ChordEngineDelegate, EventTapDelegate {
         }
     }
 
+    func chordEngineDidRequestDeleteWordBackward(_ engine: ChordEngine) {
+        textInjector.deleteWordBackward()
+    }
+
     func chordEngine(_ engine: ChordEngine, didFailWithKeys keys: [BufferedKey]) {
         textInjector.replayKeys(keys)
     }

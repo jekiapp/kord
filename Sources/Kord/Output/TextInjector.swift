@@ -35,6 +35,17 @@ final class TextInjector {
         }
     }
 
+    func deleteWordBackward() {
+        let keyDown = CGEvent(keyboardEventSource: source, virtualKey: CGKeyCode(kVK_Delete), keyDown: true)
+        let keyUp = CGEvent(keyboardEventSource: source, virtualKey: CGKeyCode(kVK_Delete), keyDown: false)
+        keyDown?.flags = .maskAlternate
+        keyUp?.flags = .maskAlternate
+        markAsOwn(keyDown)
+        markAsOwn(keyUp)
+        keyDown?.post(tap: .cgSessionEventTap)
+        keyUp?.post(tap: .cgSessionEventTap)
+    }
+
     private func postCharacter(_ char: UniChar) {
         var char = char
         let keyDown = CGEvent(keyboardEventSource: source, virtualKey: 0, keyDown: true)
