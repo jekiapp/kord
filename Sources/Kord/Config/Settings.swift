@@ -17,6 +17,13 @@ final class AppSettings: ObservableObject {
         didSet { defaults.set(dictionaryPath, forKey: Keys.dictionaryPath) }
     }
 
+    /// Incremented from the preferences UI so `KordCoordinator` can reload the on-disk dictionary into the engine without changing `dictionaryPath`.
+    @Published private(set) var dictionaryReloadToken: UInt64 = 0
+
+    func requestEngineDictionaryReloadFromDisk() {
+        dictionaryReloadToken &+= 1
+    }
+
     private init() {
         let defaultPath = FileManager.default.homeDirectoryForCurrentUser
             .appendingPathComponent(".config/kord/dictionary.json")

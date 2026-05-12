@@ -22,11 +22,12 @@ enum DictionaryDiskIO {
     }
 
     static func load(path: String) throws -> Loaded {
-        guard FileManager.default.fileExists(atPath: path) else {
+        let resolved = ((path as NSString).expandingTildeInPath as NSString).standardizingPath
+        guard FileManager.default.fileExists(atPath: resolved) else {
             return Loaded(timingWindowMs: 70, entries: [])
         }
 
-        let content = try String(contentsOfFile: path, encoding: .utf8)
+        let content = try String(contentsOfFile: resolved, encoding: .utf8)
         guard let root = try Yams.load(yaml: content) as? [String: Any] else {
             throw DiskError.unreadable
         }
@@ -63,6 +64,7 @@ enum DictionaryDiskIO {
     }
 
     static func save(path: String, timingWindowMs: Int, rows: [(word: String, shortcut: String)]) throws {
+        let resolved = ((path as NSString).expandingTildeInPath as NSString).standardizingPath
         var words: [String: String] = [:]
         for row in rows {
             let word = row.word.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -82,7 +84,7 @@ enum DictionaryDiskIO {
         }
 
         let data = try JSONSerialization.data(withJSONObject: payload, options: [.prettyPrinted, .sortedKeys])
-        let url = URL(fileURLWithPath: path)
+        let url = URL(fileURLWithPath: resolved)
 
         let dir = url.deletingLastPathComponent()
         try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)

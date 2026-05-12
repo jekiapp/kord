@@ -32,7 +32,9 @@ bundle:
 	swift build -c release
 	rm -rf "$(BUNDLE)"
 	mkdir -p "$(BUNDLE)/Contents/MacOS"
+	mkdir -p "$(BUNDLE)/Contents/Resources"
 	cp Resources/Info.plist "$(BUNDLE)/Contents/Info.plist"
+	cp Resources/AppIcon.icns "$(BUNDLE)/Contents/Resources/AppIcon.icns"
 	cp "$$(swift build -c release --show-bin-path)/$(APP)" "$(BUNDLE)/Contents/MacOS/$(APP)"
 	chmod +x "$(BUNDLE)/Contents/MacOS/$(APP)"
 	@echo "Built $(CURDIR)/$(BUNDLE)"

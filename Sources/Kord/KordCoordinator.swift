@@ -76,6 +76,17 @@ final class KordCoordinator: ChordEngineDelegate, EventTapDelegate {
                 self.configManager.startWatching(path: path)
             }
             .store(in: &cancellables)
+
+        settings.$dictionaryReloadToken
+            .dropFirst()
+            .sink { [weak self] _ in
+                guard let self = self else { return }
+                let path = self.settings.dictionaryPath
+                _ = self.configManager.loadDictionary(from: path)
+                self.engine.updateDictionary(self.configManager.dictionary)
+                self.configManager.startWatching(path: path)
+            }
+            .store(in: &cancellables)
     }
 
     private func startEngine() {

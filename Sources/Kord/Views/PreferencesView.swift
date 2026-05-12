@@ -109,6 +109,9 @@ private struct DictionaryTab: View {
                     }
                     Button("Reload") {
                         loadFromDisk()
+                        if loadError == nil {
+                            settings.requestEngineDictionaryReloadFromDisk()
+                        }
                     }
                 }
 
@@ -193,8 +196,9 @@ private struct DictionaryTab: View {
 
     private func loadFromDisk() {
         saveError = nil
+        let resolved = ((settings.dictionaryPath as NSString).expandingTildeInPath as NSString).standardizingPath
         do {
-            if FileManager.default.fileExists(atPath: settings.dictionaryPath) {
+            if FileManager.default.fileExists(atPath: resolved) {
                 let loaded = try DictionaryDiskIO.load(path: settings.dictionaryPath)
                 fileTimingMs = loaded.timingWindowMs
                 rows = loaded.entries.map { EditableWordRow(word: $0.word, shortcut: $0.shortcut) }
@@ -217,6 +221,7 @@ private struct DictionaryTab: View {
                 timingWindowMs: fileTimingMs,
                 rows: rows.map { ($0.word, $0.shortcut) }
             )
+            settings.requestEngineDictionaryReloadFromDisk()
         } catch {
             saveError = error.localizedDescription
         }
