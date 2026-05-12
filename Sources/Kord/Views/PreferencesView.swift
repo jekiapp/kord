@@ -1,4 +1,5 @@
 import SwiftUI
+import UniformTypeIdentifiers
 
 struct PreferencesView: View {
     @EnvironmentObject var settings: AppSettings
@@ -13,7 +14,7 @@ struct PreferencesView: View {
             ChordTesterView()
                 .tabItem { Label("Chord Tester", systemImage: "keyboard") }
         }
-        .frame(width: 450, height: 300)
+        .frame(width: 580, height: 560)
         .padding()
     }
 }
@@ -60,9 +61,39 @@ private struct GeneralTab: View {
     }
 }
 
+private struct EditableWordRow: Identifiable {
+    let id: UUID
+    var word: String
+    var shortcut: String
+
+    init(id: UUID = UUID(), word: String = "", shortcut: String = "") {
+        self.id = id
+        self.word = word
+        self.shortcut = shortcut
+    }
+}
+
 private struct DictionaryTab: View {
     @EnvironmentObject var settings: AppSettings
     @State private var showFilePicker = false
+    @State private var rows: [EditableWordRow] = []
+    @State private var fileTimingMs: Int = 70
+    @State private var search: String = ""
+    @State private var loadError: String?
+    @State private var saveError: String?
+
+    private var visibleRowIDs: [UUID] {
+        let query = search.trimmingCharacters(in: .whitespacesAndNewlines)
+        if query.isEmpty {
+            return rows.map(\.id)
+        }
+        return rows
+            .filter {
+                $0.word.localizedCaseInsensitiveContains(query)
+                    || $0.shortcut.localizedCaseInsensitiveContains(query)
+            }
+            .map(\.id)
+    }
 
     var body: some View {
         Form {
@@ -76,41 +107,118 @@ private struct DictionaryTab: View {
                     Button("Browse...") {
                         showFilePicker = true
                     }
+                    Button("Reload") {
+                        loadFromDisk()
+                    }
                 }
 
-                Text("JSON file mapping words to shortcuts. Changes are detected automatically.")
+                Text("Edit entries below. Save writes JSON to this path; the engine reloads automatically.")
                     .font(.caption)
                     .foregroundColor(.secondary)
 
+                if let loadError {
+                    Text(loadError)
+                        .font(.caption)
+                        .foregroundColor(.red)
+                }
+
                 Divider()
 
-                Text("Format Example:")
-                    .font(.subheadline)
-                Text("""
-                    {
-                      "timing_window_ms": 70,
-                      "words": {
-                        "problem": "prb",
-                        "with": "wh",
-                        "transaction": "txn"
-                      }
+                TextField("Search words or shortcuts", text: $search)
+                    .textFieldStyle(.roundedBorder)
+
+                ScrollView {
+                    LazyVStack(alignment: .leading, spacing: 8) {
+                        ForEach(visibleRowIDs, id: \.self) { id in
+                            if let idx = rows.firstIndex(where: { $0.id == id }) {
+                                HStack(alignment: .firstTextBaseline) {
+                                    TextField("Word", text: $rows[idx].word)
+                                        .textFieldStyle(.roundedBorder)
+                                    TextField("Shortcut", text: $rows[idx].shortcut)
+                                        .textFieldStyle(.roundedBorder)
+                                        .frame(maxWidth: 160)
+                                    Button {
+                                        rows.remove(at: idx)
+                                    } label: {
+                                        Image(systemName: "minus.circle.fill")
+                                            .foregroundColor(.secondary)
+                                    }
+                                    .buttonStyle(.borderless)
+                                    .help("Remove entry")
+                                }
+                            }
+                        }
                     }
-                    """)
-                    .font(.system(.caption, design: .monospaced))
-                    .padding(8)
-                    .background(Color(nsColor: .controlBackgroundColor))
-                    .cornerRadius(4)
+                }
+                .frame(minHeight: 220)
+
+                HStack {
+                    Button {
+                        rows.append(EditableWordRow())
+                    } label: {
+                        Label("Add Entry", systemImage: "plus.circle.fill")
+                    }
+
+                    Spacer()
+
+                    if let saveError {
+                        Text(saveError)
+                            .font(.caption)
+                            .foregroundColor(.red)
+                            .lineLimit(2)
+                    }
+
+                    Button("Save") {
+                        persist()
+                    }
+                    .keyboardShortcut("s", modifiers: [.command])
+                }
             }
         }
         .padding()
+        .onAppear { loadFromDisk() }
+        .onChange(of: settings.dictionaryPath) { _, _ in
+            loadFromDisk()
+        }
         .fileImporter(
             isPresented: $showFilePicker,
-            allowedContentTypes: [.json],
+            allowedContentTypes: [.json, .yaml],
             onCompletion: { result in
                 if case .success(let url) = result {
                     settings.dictionaryPath = url.path
                 }
             }
         )
+    }
+
+    private func loadFromDisk() {
+        saveError = nil
+        do {
+            if FileManager.default.fileExists(atPath: settings.dictionaryPath) {
+                let loaded = try DictionaryDiskIO.load(path: settings.dictionaryPath)
+                fileTimingMs = loaded.timingWindowMs
+                rows = loaded.entries.map { EditableWordRow(word: $0.word, shortcut: $0.shortcut) }
+            } else {
+                fileTimingMs = settings.timingWindowMs
+                rows = []
+            }
+            loadError = nil
+        } catch {
+            loadError = error.localizedDescription
+            rows = []
+        }
+    }
+
+    private func persist() {
+        saveError = nil
+        do {
+            try DictionaryDiskIO.save(
+                path: settings.dictionaryPath,
+                timingWindowMs: fileTimingMs,
+                rows: rows.map { ($0.word, $0.shortcut) }
+            )
+        } catch {
+            saveError = error.localizedDescription
+        }
     }
 }
