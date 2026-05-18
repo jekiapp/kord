@@ -116,7 +116,7 @@ final class KordCoordinator: ChordEngineDelegate, EventTapDelegate {
 
     func chordEngine(_ engine: ChordEngine, didRecognizeChord expansion: String, replacingKeyCount: Int) {
         let isSuffixExpansion = expansion.hasPrefix("-")
-        let injectedText = isSuffixExpansion ? String(expansion.dropFirst()) : expansion + " "
+        let injectedText = (isSuffixExpansion ? String(expansion.dropFirst()) : expansion) + " "
 
         if replacingKeyCount > 0 {
             textInjector.deleteBackward(count: replacingKeyCount)

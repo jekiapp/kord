@@ -183,7 +183,7 @@ final class ChordEngine {
         }
 
         debugLog("match gesture; typed=\(String(typedCharacters)) shortcutLength=\(match.shortcutLength) replacingKeyCount=\(replacingKeyCount) expansion=\(expansion) preceding=\(String(gesturePrecedingContext))")
-        let injectedText = isSuffixExpansion ? String(expansion.dropFirst()) : expansion + " "
+        let injectedText = (isSuffixExpansion ? String(expansion.dropFirst()) : expansion) + " "
         rebuildPrecedingContextAfterCommit(deletedCount: replacingKeyCount, injectedText: injectedText)
 
         state = .idle
