@@ -114,18 +114,18 @@ final class KordCoordinator: ChordEngineDelegate, EventTapDelegate {
 
     // MARK: - ChordEngineDelegate
 
-    func chordEngine(_ engine: ChordEngine, didRecognizeChord expansion: String) {
-        textInjector.inject(expansion + " ")
+    func chordEngine(_ engine: ChordEngine, didRecognizeChord expansion: String, replacingKeyCount: Int) {
+        let isSuffixExpansion = expansion.hasPrefix("-")
+        let injectedText = isSuffixExpansion ? String(expansion.dropFirst()) : expansion + " "
+
+        if replacingKeyCount > 0 {
+            textInjector.deleteBackward(count: replacingKeyCount)
+        }
+
+        textInjector.inject(injectedText)
         DispatchQueue.main.async {
-            self.appState.lastExpansion = expansion
+            self.appState.lastExpansion = injectedText
         }
     }
 
-    func chordEngineDidRequestDeleteWordBackward(_ engine: ChordEngine) {
-        textInjector.deleteWordBackward()
-    }
-
-    func chordEngine(_ engine: ChordEngine, didFailWithKeys keys: [BufferedKey]) {
-        textInjector.replayKeys(keys)
-    }
 }

@@ -196,7 +196,7 @@ final class MockEngineDelegate: ChordEngineDelegate {
     var failedKeys: [BufferedKey]?
     var didRequestDeleteWordBackward = false
 
-    func chordEngine(_ engine: ChordEngine, didRecognizeChord expansion: String) {
+    func chordEngine(_ engine: ChordEngine, didRecognizeChord expansion: String, replacingKeyCount: Int) {
         recognizedExpansion = expansion
     }
 

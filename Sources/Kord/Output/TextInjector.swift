@@ -22,28 +22,16 @@ final class TextInjector {
         }
     }
 
-    func replayKeys(_ keys: [BufferedKey]) {
-        for key in keys {
-            let keyDown = CGEvent(keyboardEventSource: source, virtualKey: CGKeyCode(key.keyCode), keyDown: true)
-            let keyUp = CGEvent(keyboardEventSource: source, virtualKey: CGKeyCode(key.keyCode), keyDown: false)
-            keyDown?.flags = key.flags
-            keyUp?.flags = key.flags
+    func deleteBackward(count: Int) {
+        guard count > 0 else { return }
+        for _ in 0 ..< count {
+            let keyDown = CGEvent(keyboardEventSource: source, virtualKey: CGKeyCode(kVK_Delete), keyDown: true)
+            let keyUp = CGEvent(keyboardEventSource: source, virtualKey: CGKeyCode(kVK_Delete), keyDown: false)
             markAsOwn(keyDown)
             markAsOwn(keyUp)
             keyDown?.post(tap: .cgSessionEventTap)
             keyUp?.post(tap: .cgSessionEventTap)
         }
-    }
-
-    func deleteWordBackward() {
-        let keyDown = CGEvent(keyboardEventSource: source, virtualKey: CGKeyCode(kVK_Delete), keyDown: true)
-        let keyUp = CGEvent(keyboardEventSource: source, virtualKey: CGKeyCode(kVK_Delete), keyDown: false)
-        keyDown?.flags = .maskAlternate
-        keyUp?.flags = .maskAlternate
-        markAsOwn(keyDown)
-        markAsOwn(keyUp)
-        keyDown?.post(tap: .cgSessionEventTap)
-        keyUp?.post(tap: .cgSessionEventTap)
     }
 
     private func postCharacter(_ char: UniChar) {

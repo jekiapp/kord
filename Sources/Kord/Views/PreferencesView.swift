@@ -127,8 +127,16 @@ private struct DictionaryTab: View {
 
                 Divider()
 
-                TextField("Search words or shortcuts", text: $search)
-                    .textFieldStyle(.roundedBorder)
+                HStack {
+                    TextField("Search words or shortcuts", text: $search)
+                        .textFieldStyle(.roundedBorder)
+                    Button {
+                        let word = search.trimmingCharacters(in: .whitespacesAndNewlines)
+                        rows.insert(EditableWordRow(word: word), at: 0)
+                    } label: {
+                        Label("Add Entry", systemImage: "plus.circle.fill")
+                    }
+                }
 
                 ScrollView {
                     LazyVStack(alignment: .leading, spacing: 8) {
@@ -156,12 +164,6 @@ private struct DictionaryTab: View {
                 .frame(minHeight: 220)
 
                 HStack {
-                    Button {
-                        rows.append(EditableWordRow())
-                    } label: {
-                        Label("Add Entry", systemImage: "plus.circle.fill")
-                    }
-
                     Spacer()
 
                     if let saveError {
